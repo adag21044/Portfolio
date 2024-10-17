@@ -21,9 +21,7 @@
       </div>
     </div>
 
-    <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
-    </div>
+    
 
     <div style="clear:both"></div>
 
