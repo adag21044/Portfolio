@@ -3,15 +3,22 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <strong>Ahmet E. Dağ</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
-      <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
-      <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
-      <br />I love teamwork, but I can also go in solo depending on the mission requirements.
-      <br />
-      <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
-      <br />
-      <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
+      <p>
+        As a computer engineering student, I continuously strive to improve myself in the field of game development. I am proficient in writing clean and sustainable code that adheres to SOLID principles and effectively utilizes design patterns in the projects I develop with Unity. I am passionate about providing creative solutions while working both independently and in teams. In my projects, I particularly focus on game architectures, performance optimization, and game mechanics.
+      </p>
+      <p>
+        I'm <strong>Ahmet E. Dağ</strong>, a dedicated game developer with a strong foundation in computer engineering. I have a deep passion for creating engaging, efficient, and optimized games. My expertise in Unity, along with my solid understanding of programming principles, allows me to develop scalable and high-performing game projects.
+      </p>
+      <p>
+        I thrive in both collaborative and solo environments, and I'm always excited to tackle new challenges. Currently, I'm looking for opportunities where I can further hone my skills and contribute to the gaming industry.
+      </p>
+      <p>
+        If you're interested in collaborating or have an opportunity available, feel free to 
+        <router-link to="/contact">contact me</router-link>.
+      </p>
+      <p>
+        Outside of coding, I'm enthusiastic about staying up-to-date with the latest trends in game development, and I enjoy working on personal projects that push my creative boundaries.
+      </p>
 
       <div style="margin-top:20px; margin-bottom:20px;">
         <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF 🇬🇧</a>
