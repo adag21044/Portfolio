@@ -33,7 +33,7 @@
     <div style="clear:both"></div>
 
     <div class="full-content">
-      <h2>Work experience</h2>
+      <h2>Work Experience</h2>
 
       <h3>Operation Classified - Delta Force</h3>
       <h4>2018-2019</h4>

@@ -1,8 +1,9 @@
 <template>
   <div class="footer">
     
-    <div class="left"><a href="https://github.com/schouffy/gamedev-portfolio" target="blank">Portfolio</a> by schouffy</div>
-    <div class="right">Reach me at <a href="mailto:my@email.com">ahmetedag9@gmail.com</a> or <router-link to="/contact">through here</router-link></div>
+    <div class="right">
+      Reach me at <a href="mailto:my@email.com" title="Send an email to Ahmet">ahmetedag9@gmail.com</a> or <router-link to="/contact" title="Contact me through this link">through here</router-link>
+    </div>
   </div>
 </template>
 
@@ -15,30 +16,28 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="less">
-
 @import '../css/variables.less';
 
 .footer {
   background-color: @bodyBgColor;
   width: 100%;
   font-size: 0.8em;
-  opacity: 0.7;
-  padding-bottom: 30px;
+  padding: 30px 0; /* Padding adjusted for better spacing */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
 
 .left, .right {
-    padding-top: 10px;
-    text-align: center;
-  }
+  text-align: center;
+}
 
-@media only screen and (min-width: 620px){
-
+@media only screen and (min-width: 620px) {
   .footer {
     padding: 0;
   }
 
   .left, .right {
     padding: 20px;
+    float: none; /* Remove float for larger screens */
   }
 
   .left {
@@ -46,7 +45,7 @@ export default Vue.extend({
   }
 
   .right {
-    float:right;
+    float: right;
   }
 }
 </style>
