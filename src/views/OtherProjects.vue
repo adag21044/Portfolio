@@ -1,54 +1,66 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>About me</h1>
+    <h1>Other Projects</h1>
 
-    <div class="paragraph">
-      <div> 
-        I'm <strong>Ahmet E. Dağ</strong>, a passionate game developer with a background in computer engineering.<br/>
-        I spend my time improving my skills in game development, focusing on game mechanics, performance optimization, and creating clean, sustainable code that adheres to SOLID principles.
+    <div class="project-list">
+      <div class="project-item">
+        <h2>Project Title 1</h2>
+        <p>
+          Brief description of Project 1. Highlight the main features, technologies used, and your contributions to the project. Discuss the problems you solved or the learning outcomes from this project.
+        </p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
       </div>
 
-      <div style="margin-top: 20px;">
-        I've worked on various <router-link to="/game-projects">game projects</router-link> and <router-link to="/other-projects">other development projects</router-link>, applying design patterns and effective coding strategies throughout.
+      <div class="project-item">
+        <h2>Project Title 2</h2>
+        <p>
+          Brief description of Project 2. Explain what the project does, the challenges faced, and how you overcame them. Share any insights or unique aspects of your approach.
+        </p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
       </div>
 
-      <div style="margin-top: 40px;">
-        I'm <strong>currently looking for opportunities</strong> to contribute to exciting projects in the game industry. You can reach me at <a href="mailto:ahmetdag@gamedev.com">ahmetdag@gamedev.com</a> or <router-link to="/contact">through here</router-link>.
+      <div class="project-item">
+        <h2>Project Title 3</h2>
+        <p>
+          Brief description of Project 3. Discuss the objectives of the project, any notable features, and what you learned during development. Mention any positive feedback or results achieved.
+        </p>
+        <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
       </div>
 
-      <div style="margin-top: 20px;">
-        As a computer engineering student, I continuously strive to improve my expertise in game development. I am proficient in writing clean, maintainable code following SOLID principles and enjoy solving complex problems, whether working independently or as part of a team.
-      </div>
+      <!-- Add more project items as needed -->
     </div>
 
-    
-
     <div style="clear:both"></div>
-
   </div>
 </template>
 
 <style scoped>
-.paragraph {
-  max-width: 700px;
-  margin-bottom: 20px;
+.project-list {
+  max-width: 800px;
+  margin-top: 20px;
 }
 
-.photo {
-  margin-top: 50px;
-  text-align: center;
+.project-item {
+  margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 620px){
-  .paragraph {
-    float: left;
-  }
-
-  .photo {
-    float: left;
-    padding: 10px;
-    padding-left: 80px;
-  }
+.project-item h2 {
+  font-size: 1.8em;
+  margin: 0;
 }
 
+.project-item p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.project-item a {
+  color: #007BFF; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-item a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 </style>

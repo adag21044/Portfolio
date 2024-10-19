@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div>
     <h1>Resume</h1>
 
@@ -148,12 +148,18 @@ h4 {
 
 .columns {
   display: flex;
-  justify-content: space-between; /* Sütunlar arasındaki boşluğu ayarlamak için */
-  margin-top: 20px; /* Üstten boşluk bırakmak için */
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .work-experience, .skills, .education, .languages {
-  width: 48%; /* Sütun genişliği, %50'den biraz daha az olmalı */
+  width: 48%;
+  margin-right: 20px; /* Sütunlar arasındaki boşluk */
+}
+
+/* Son sütun için sağ boşluğu kaldır */
+.languages {
+  margin-right: 0;
 }
 
 .skill-item {
@@ -163,11 +169,11 @@ h4 {
 }
 
 .skill-item::before {
-  content: '•'; /* Nokta işareti */
+  content: '•'; 
   position: absolute;
   left: 0;
-  color: black; /* Noktanın rengi */
-  font-size: 24px; /* Noktanın boyutu */
+  color: black; 
+  font-size: 24px; 
   line-height: 1;
 }
 </style>
