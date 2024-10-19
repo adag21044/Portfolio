@@ -1,10 +1,10 @@
-<template>
+<template> 
   <div>
     <h1>Resume</h1>
 
     <div class="paragraph">
       <p>
-        As a computer engineering student, I continuously strive to improve myself in the field of game development. I am proficient in writing clean and sustainable code that adheres to <strong>SOLID Principles</strong> and effectively utilizes design patterns in the projects I develop with Unity. I am passionate about providing creative solutions while working both independently and in teams. In my projects, I particularly focus on game architectures, performance optimization, and game mechanics.
+        As a computer engineering student, I continuously strive to improve myself in the field of game development. I am proficient in writing clean and sustainable code that adheres to SOLID principles and effectively utilizes design patterns in the projects I develop with Unity. I am passionate about providing creative solutions while working both independently and in teams. In my projects, I particularly focus on game architectures, performance optimization, and game mechanics.
       </p>
       <p>
         I'm <strong>Ahmet E. Dağ</strong>, a dedicated game developer with a strong foundation in computer engineering. I have a deep passion for creating engaging, efficient, and optimized games. My expertise in Unity, along with my solid understanding of programming principles, allows me to develop scalable and high-performing game projects.
@@ -26,7 +26,7 @@
         <div style="clear:both"></div>
       </div>
     </div>
-
+    
     <br/>
     <br/>
     <br/>
@@ -76,13 +76,13 @@
       <div class="columns">
         <div class="education">
           <h2>Education</h2>
-          <h3><strong>Istanbul Medeniyet University</strong></h3>
-          <h4><strong>Computer Engineering</strong></h4>
+          <h3>Istanbul Medeniyet University</h3>
+          <h4>Computer Engineering</h4>
         </div>
 
         <div class="languages">
           <h2>Languages</h2>
-          <h3><strong>English</strong></h3>
+          <h3>English</h3>
         </div>
       </div>
     </div>
@@ -154,9 +154,10 @@ h4 {
 
 .work-experience, .skills, .education, .languages {
   width: 48%;
-  margin-right: 20px;
+  margin-right: 20px; /* Sütunlar arasındaki boşluk */
 }
 
+/* Son sütun için sağ boşluğu kaldır */
 .languages {
   margin-right: 0;
 }
@@ -174,10 +175,5 @@ h4 {
   color: black; 
   font-size: 24px; 
   line-height: 1;
-}
-
-strong {
-  font-weight: bold;
-  font-size: 1.15em; /* Adjust the font size if necessary */
 }
 </style>
