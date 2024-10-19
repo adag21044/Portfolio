@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import ProjectsList from "../components/ProjectsList.vue";
+
 
 
 export default Vue.extend({
