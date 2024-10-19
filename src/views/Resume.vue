@@ -26,67 +26,65 @@
         <div style="clear:both"></div>
       </div>
     </div>
-    <div class="photo">
-      <img src="img/resume-photo.png" alt="Photo of John" />
-    </div>
-
-    <div style="clear:both"></div>
+    
+    <br/>
+    <br/>
+    <br/>
 
     <div class="full-content">
-      <h2>Work Experience</h2>
+      <div class="columns">
+        <div class="work-experience">
+          <h2>Work Experience</h2>
+          <h3>Ideon - Software Developer Intern</h3>
+          <h4>2024</h4>
+          <div>Frontend Web Development</div>
+          <div class="tech-stack">HTML, CSS, Javascript</div>
+        </div>
 
-      <h3>Ideon - Software Developer Intern</h3>
-      <h4>2024</h4>
-
-      <div>Frontend Web Development</div>
-
-      <div class="tech-stack">HTML, CSS, Javascript</div>
-
-      <h2>Skills</h2>
-
-      <div class="skill-set">
-        <h3>Core Competencies</h3>
-        <div class="skill-item">
-          <SkillRate name="Unity"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="C#"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="Game Design & Development"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="Programming Patterns"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="SOLID Principles"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="Performance Optimization"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="Project Management with GitHub"/>
-        </div>
-        <div class="skill-item">
-          <SkillRate name="Game Mechanics and Animation Systems"/>
+        <div class="skills">
+          <h2>Skills</h2>
+          <div class="skill-set">
+            <h3>Core Competencies</h3>
+            <div class="skill-item">
+              <SkillRate name="Unity"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="C#"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="Game Design & Development"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="Programming Patterns"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="SOLID Principles"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="Performance Optimization"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="Project Management with GitHub"/>
+            </div>
+            <div class="skill-item">
+              <SkillRate name="Game Mechanics and Animation Systems"/>
+            </div>
+          </div>
         </div>
       </div>
 
-      <h2>Education</h2>
+      <div class="columns">
+        <div class="education">
+          <h2>Education</h2>
+          <h3>Istanbul Medeniyet University</h3>
+          <h4>Computer Engineering</h4>
+        </div>
 
-      <h3>Kindergarten - 1985</h3>
-      <h4>Kindergarten degree</h4>
-      <div>Specialty in bullying and fighting (58 wins, 58 K-O, 0 losses)</div>
-
-      <h2>Languages</h2>
-
-      <h3>American</h3>
-      <div>Basic knowledge but I know lots of one-liners</div>
-
-      
-
-
-      
+        <div class="languages">
+          <h2>Languages</h2>
+          <h3>English</h3>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -144,35 +142,18 @@ h4 {
   padding-bottom: 10px;
 }
 
-.photo img {
-  height: 300px;
-  width: 300px;
-}
-
 .tech-stack {
   font-style: italic;
 }
 
-.photo {
-  margin-top: 50px;
-  text-align: center;
+.columns {
+  display: flex;
+  justify-content: space-between; /* Sütunlar arasındaki boşluğu ayarlamak için */
+  margin-top: 20px; /* Üstten boşluk bırakmak için */
 }
 
-@media only screen and (min-width: 620px){
-  .paragraph {
-    float: left;
-  }
-
-  .photo {
-    float: left;
-    padding: 30px;
-    padding-left: 80px;
-  }
-
-  .skill-set {
-    float: left;
-    padding-right: 60px; 
-  }
+.work-experience, .skills, .education, .languages {
+  width: 48%; /* Sütun genişliği, %50'den biraz daha az olmalı */
 }
 
 .skill-item {
@@ -189,3 +170,4 @@ h4 {
   font-size: 24px; /* Noktanın boyutu */
   line-height: 1;
 }
+</style>
