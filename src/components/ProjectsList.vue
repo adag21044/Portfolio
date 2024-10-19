@@ -1,21 +1,7 @@
 <template>
     <div>
       <div class="projects-list">
-        <template v-for="project in projects">
-          <div
-            :key="project.id"
-              @click="showDetails(project)"
-              class="project-item"
-              :class="{ 'wide': project.isWide, 'high': project.isHigh }">
-            <div class="project-item-image" :style="{ 'background-image': 'url(' + project.iconUrl + ')' }">
-            </div>
-            <div class="title-bar" :style="{ 'background-color': project.accentColor + 'DD' }">
-                <div class="title-text">
-                  {{ project.name }}
-                </div>
-              </div>
-          </div>
-        </template>
+        
       </div>
 
       <ProjectDetailsOverlay
@@ -30,8 +16,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import ProjectDetailsOverlay from "@/components/ProjectDetailsOverlay.vue";
-import ProjectData from "@/data/ProjectData.ts";
+import ProjectDetailsOverlay from "../components/ProjectDetailsOverlay.vue";
+import ProjectData from "../data/ProjectData.ts";
 
 export default Vue.extend({
   name: "ProjectsList",
