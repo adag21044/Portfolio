@@ -26,26 +26,21 @@ export default Vue.extend({
   props: {
     visible: {
       type: Boolean,
-      required: true
+      required: true,
     },
     color: {
       type: String,
-      default: '#fff' // Varsayılan bir arka plan rengi belirlemek
+      default: '#fff',
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     htmlContent: {
       type: String,
-      required: true
+      required: true,
     },
   },
-  methods: {
-    getImage(url: string) {
-      console.log("fetching image " + url);
-    }
-  }
 });
 </script>
 
@@ -62,74 +57,45 @@ export default Vue.extend({
 
 .dialog {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: #fff;
   z-index: 11;
-  margin: 20px;
-  padding-bottom: 10px;
-  color: white;
+  padding: 10px;
+  color: #333;
 }
 
 h1.dialog-title {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0;
-  padding: 22px;
+  padding: 15px;
 }
 
 .dialog-content {
   padding: 20px;
-  background-color: #fcfcfc;
   color: #696969;
 }
 
 .dialog-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
   font-size: 1.2em;
-  font-weight: 100;
-}
-
-.dialog-close:hover {
-  opacity: 0.6;
 }
 
 .dialog-bottom {
   text-align: center;
+  padding-top: 10px;
 }
 
 a.dialog-close-button {
+  font-size: 1.2em;
+  color: #007bff;
   cursor: pointer;
-  font-size: 1.4em;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 620px) {
-  .dialog {
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    max-width: 1000px;
-  }
-
-  h1.dialog-title {
-    font-size: 1.6em;
-  }
-
-  .dialog-content {
-    padding: 40px;
-  }
-}
-
-/* Fade transition styles */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  opacity: 0;
 }
 </style>
