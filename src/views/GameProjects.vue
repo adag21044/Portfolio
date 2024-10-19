@@ -20,6 +20,7 @@
         <p>Description of the project, explaining its features, mechanics, and what you learned while creating it.</p>
         <a href="https://github.com/YOUR_GITHUB_REPO_2" target="_blank">View on GitHub</a>
       </div>
+
       <div class="project-card">
         <h3>Project Title 3</h3>
         <div class="video-container">
@@ -80,7 +81,9 @@
 }
 
 .video-container {
-  margin-bottom: 15px;
+  display: flex; /* Flexbox kullanarak video kapsayıcısını ortalayacağız */
+  justify-content: center; /* Yatayda ortalamak için */
+  margin-bottom: 15px; /* Alt boşluk */
 }
 
 @media only screen and (max-width: 620px) {
