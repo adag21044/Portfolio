@@ -6,8 +6,6 @@ export default class ProjectData {
     isWide: boolean; // thumbnail will take 2 cols in the grid view
     isHigh: boolean; // thumbnail will take 2 rows in the grid view
     accentColor: string; // color of title bar 
-    color: any;
-    imageUrl: string;
 
     constructor(id: string, name: string, iconUrl: string, html: string, accentColor = "#000000", isHigh = false, isWide = false){
         this.id = id;

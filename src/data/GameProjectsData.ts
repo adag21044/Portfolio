@@ -1,5 +1,5 @@
-import ProjectData from './ProjectData'
-/*..... */
+import ProjectData from '@/data/ProjectData.ts'
+
 export default [
     new ProjectData("project-1", "Optimistic Chubby", "img/projects/project-1-icon.png", 
     `
