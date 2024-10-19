@@ -4,13 +4,14 @@
     <div class="projects">
       <!-- Project Example Start -->
       <div class="project-card">
-        <h3>Project Title 1</h3>
+        <h3>Hyper Casual Arcade Idle System</h3>
         <div class="video-container">
-          <iframe width="280" height="157" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          <iframe width="280" height="157" src="https://www.youtube.com/embed/bszFYCdY4bQ" frameborder="0" allowfullscreen></iframe>
         </div>
         <p>Description of the project, explaining its features, mechanics, and what you learned while creating it.</p>
-        <a href="https://github.com/YOUR_GITHUB_REPO_1" target="_blank">View on GitHub</a>
+        <a href="https://github.com/YOUR_GITHUB_REPO_2" target="_blank">View on GitHub</a>
       </div>
+
       <div class="project-card">
         <h3>Project Title 2</h3>
         <div class="video-container">
