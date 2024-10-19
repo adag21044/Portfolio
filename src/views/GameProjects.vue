@@ -9,7 +9,7 @@
           <iframe width="280" height="157" src="https://www.youtube.com/embed/bszFYCdY4bQ" frameborder="0" allowfullscreen></iframe>
         </div>
         <p>Description of the project, explaining its features, mechanics, and what you learned while creating it.</p>
-        <a href="https://github.com/YOUR_GITHUB_REPO_2" target="_blank">View on GitHub</a>
+        <a href="https://github.com/adag21044/Hyper-Casual-Arcade-Idle-System" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project-card">

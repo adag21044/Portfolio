@@ -35,48 +35,42 @@
     <div class="full-content">
       <h2>Work Experience</h2>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2018-2019</h4>
+      <h3>Ideon - Software Developer Intern</h3>
+      <h4>2024</h4>
 
-      <div>It's classified so I can't speak about it.</div>
+      <div>Frontend Web Development</div>
 
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2015-2017</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Even more Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2012-2015</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <div class="tech-stack">HTML, CSS, Javascript</div>
 
       <h2>Skills</h2>
 
       <div class="skill-set">
-        <h3>Lethal</h3>
-        <SkillRate name="Handguns" :rate="5" />
-        <SkillRate name="Rifles" :rate="5" />
-        <SkillRate name="Shotguns" :rate="5" />
-        <SkillRate name="Machineguns" :rate="5" />
-        <SkillRate name="Missile launchers" :rate="5" />
-        <SkillRate name="Knives" :rate="5" />
-        <SkillRate name="Hand to hand combat" :rate="5" />
+        <h3>Core Competencies</h3>
+        <div class="skill-item">
+          <SkillRate name="Unity"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="C#"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="Game Design & Development"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="Programming Patterns"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="SOLID Principles"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="Performance Optimization"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="Project Management with GitHub"/>
+        </div>
+        <div class="skill-item">
+          <SkillRate name="Game Mechanics and Animation Systems"/>
+        </div>
       </div>
-
-      <div class="skill-set">
-        <h3>Non-lethal</h3>
-        <SkillRate name="Sneaking" :rate="1" />
-        <SkillRate name="Negotiation" :rate="1" />
-        <SkillRate name="Seduction" :rate="1" />
-        <SkillRate name="Sense of humor" :rate="2" />
-      </div>
-      <div style="clear:both" />
 
       <h2>Education</h2>
 
@@ -89,25 +83,10 @@
       <h3>American</h3>
       <div>Basic knowledge but I know lots of one-liners</div>
 
-      <h3>That's it</h3>
-      <div>Who needs another language when you speak American?</div>
+      
 
 
-      <h2>Besides...</h2>
-      <div>
-        <h3>I ❤️ Violence</h3>
-        <div>I find it really soothing to just shoot at bad guys</div>
-
-        <h3>I 🧡 Sports</h3>
-        <div>I used to be thin but then I ingested 10 kilos of steroids and proteins a day while doing 1000 push-ups.</div>
-
-        <h3>I 💛 Politics</h3>
-        <div>I hope I can have a career here someday but I might have temper issues.</div>
-
-        <h3>I 💚 Flowers</h3>
-        <div>Especially the big ones, with the trunk and leaves.</div>
-
-      </div>
+      
     </div>
   </div>
 </template>
@@ -195,4 +174,18 @@ h4 {
     padding-right: 60px; 
   }
 }
-</style>
+
+.skill-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-item::before {
+  content: '•'; /* Nokta işareti */
+  position: absolute;
+  left: 0;
+  color: black; /* Noktanın rengi */
+  font-size: 24px; /* Noktanın boyutu */
+  line-height: 1;
+}
