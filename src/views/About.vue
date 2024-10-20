@@ -13,7 +13,7 @@
       </div>
 
       <div style="margin-top: 40px;">
-        I'm <strong>currently looking for opportunities</strong> to contribute to exciting projects in the game industry. You can reach me at <a href="mailto:ahmetedag9@gmail.com">ahmetedag9@gmail.com</a> or <router-link to="/contact">through here</router-link>.
+        I'm <strong>currently looking for opportunities</strong> to contribute to exciting projects in the game industry. You can reach me at <a href="mailto:ahmetdag@gamedev.com">ahmetdag@gamedev.com</a> or <router-link to="/contact">through here</router-link>.
       </div>
 
       <div style="margin-top: 20px;">
