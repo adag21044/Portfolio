@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.lvl1, .lvl2, .lvl3, .lvl4 {
+  background-color: white;
+  border-left: 8px solid blue;
+  border-right: 8px solid blue;
+  height: 100%;
+  padding: 8px 0;
+  margin-left: -16px;
+  width: 616px;
+}
+
+.out {
+  border-color: blue;
+  border: 8px solid blue;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.lvl1 {
+  width: 616px;
+}
+
+.lvl2 {
+  width: 632px;
+}
+
+.lvl3 {
+  width: 648px;
+}
+
+.lvl4 {
+  width: 664px;
+}
+
+.fix {
+  text-align: center;
+  padding: 0 24px;
+}

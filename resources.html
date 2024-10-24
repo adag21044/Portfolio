@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Student Resources</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/grid.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+
+
+
+<script src = "js/DropDown.js" type = "text/javascript"></script>
+
+
+
+
+<body>
+
+
+  	
+	<div class ="miniNavbar"> <a href="index.html#About">About</a> | <a href="index.html#Events">Events</a> | <a href="Contact.html">Projects</a> | <a href="Contact.html">Games</a> | <a href="Contact.html">Resources</a> | <a href="index.html#Contact">Contact</a></div>
+	 
+  
+<div class="ResourceMain">
+ 
+ 
+	<h1>Student Resources</h1>
+	
+	<p>This page is an aggregate list of online tutorials and web resources that the club has put together in order to help new members break in to and understand game development. Click on the dropdown topics below to display tutorials and information relating to the described topics.</p>
+ 
+ 
+ 
+  <button onclick="hideContent('Unity', 'UnityBut')"><h1 class="inlineBlock">Unity</h1>&nbsp;&nbsp;&nbsp;&nbsp;<i id = "UnityBut" class="arleft"></i></button>
+  
+  
+  
+  <div id = "Unity" class="ResourceMainH2">
+  	
+  	<p><strong>Description:</strong> good shit my dude</p>
+  	
+  	
+  	
+  	<button onclick="hideContent('UnityB', 'UnityBut1')"><h2 class="inlineBlock">Intro to Unity Basics</h2>&nbsp;&nbsp;&nbsp;&nbsp;<i id = "UnityBut1" class="arleft"></i></button>
+  	<div id = "UnityB" class="ResourceMainP">
+  		
+  		<h2>Roll a Ball</h2>
+  		
+  		<p><strong>Description:</strong> Roll a Ball is a standard intro Unity tutorial, it will walk you through the basic functionality of the unity editor and teach you about the basics of unity's physics/collision system and c# scripting. This is a good starting point for learning how the unity editor and workflow works. This will probably take you an hour or two if you are new to unity. </p>
+  		
+  		<p><strong>Covers:</strong> Physics, Character Movement, Basic Scripting</p>
+  		
+  		<div class = "vid-container">
+  		<iframe width="500" height="400" src="https://www.youtube.com/embed/videoseries?list=PLX2vGYjWbI0Q-s4_lX0h4i2zbZqlg4OfF" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		
+		<h2>Brackey's Unity Intro Tutorial</h2>
+  		
+  		<p><strong>Description:</strong> This covers mostly the same material that roll a ball does but the game it makes is different. The reason we included this video series is because it is by Brackeys, the most prolific Unity Tutorial Youtuber. Brackeys has made videos covering many of the key features of Unity, so if you watch this tutorial and can follow along he is an excellent resource for beginner devs.</p>
+  		
+  		<p><strong>Covers:</strong> Sprite Sheets, Camera Movement, Character Movement, and Physics</p>
+  		
+  		<div class = "vid-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/IlKaB1etrik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		
+		
+		<h2>Making a Character Controller with Custom Physics</h2>
+  		
+  		<p><strong>Description:</strong> This video series shows how you can use some of Unity's components to customize and reimplement parts of their physics system, in order to create a more responsive and predictable 2D character controller. I would reccomend this tutorial if you want to make a game where physical interactions matter, or if you are unhappy with how your character controls while using Unity's standard physics and collision detection. This tutorial is slightly more advanced than the first two, but is very useful.</p>
+  		
+  		<p><strong>Covers:</strong> Physics,Collision Detection, Lots of Scripting</p>
+  		
+  		<div class = "vid-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/wGI2e3Dzk_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+ 		
+	  </div>
+  	
+  	
+  	
+  	
+  	
+  	
+  	<button onclick="hideContent('UnityA', 'UnityBut3')"><h2 class="inlineBlock">Animation</h2>&nbsp;&nbsp;&nbsp;&nbsp;<i id = "UnityBut3" class="arleft"></i></button>
+  	<div id = "UnityA" class="ResourceMainP">
+  		
+  		<h2>2d Animations</h2>
+  		
+  		<p><strong>Description:</strong> This tutorial will cover how to extract animations out of sprite sheets and turn them into Unity animation files. It then shows how to apply those animations to a basic 2d character controller in order to play the animations at the correct times.</p>
+  		
+  		<p><strong>Covers:</strong> Animation, Character Movement, Scripting</p>
+  		
+  		<div class = "vid-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/VAyWk0eIqRc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2>3d Animations</h2>
+  		
+  		<p><strong>Description:</strong> This is a Unity live training session that covers how to rig 3d Animations to 3d models. Rigging animations means applying a 3D animation file to a so it can manipulate the models appearences at the correct times. The session is a bit lengthy, but the real tutorial doesn't start until 18 minutes in so you can skip that if you want to. Further down the page, in the blender section, there are links detailing how to make your own 3d animations instead of using the stock asset used in this tutorial.</p>
+  		
+  		<p><strong>Covers:</strong> Animation, Rigging, Scripting</p>
+  		
+  		<div class = "vid-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wf6vtCgLk6w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		
+ 		
+  	</div>
+  	
+  	<button onclick="hideContent('UnityAI', 'UnityBut2')"><h2 class="inlineBlock">AI</h2>&nbsp;&nbsp;&nbsp;&nbsp;<i id = "UnityBut2" class="arleft"></i></button>
+  	<div id = "UnityAI" class="ResourceMainP">
+  		
+  		<h2>Unity Navmesh</h2>
+  		
+  		<p><strong>Description:</strong> A navmesh is a surface that gameobjects can use for pathfinding and determining the most efficent way to reach a designated position. This is a very convenient way to handle AI movement and pathfinding in Unity. This tutorial series covers how to make and use a Navmesh and later shows how to make Navmeshes at runtime, which is very useful if you want to make a procedurally generated game.</p>
+  		
+  		<p><strong>Covers:</strong> Navmeshes and the Navmesh Component</p>
+  		
+  		<div class = "vid-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CHV1ymlw-P8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2>Basic NPC Follow Script</h2>
+  		
+  		<p><strong>Description:</strong> This tutorial shows how to make a very basic AI Gameobject that faces and follows the player. It also covers how to rig this agent.</p>
+  		
+  		<p><strong>Covers:</strong> AI, Rigging</p>
+  		
+  		<div class = "vid-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/gXpi1czz5NA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+ 		
+  	</div>
+  	
+  	<button onclick="hideContent('UnityMP', 'UnityBut4')"><h2 class="inlineBlock">Multiplayer/Online Connectivity</h2>&nbsp;&nbsp;&nbsp;&nbsp;<i id = "UnityBut4" class="arleft"></i></button>
+  	<div id = "UnityMP" class="ResourceMainP">
+  		
+  		<h2>UNET LAN Multiplayer</h2>
+  		
+  		<p><strong>Description:</strong> This tutorial covers how to use Unity's built-in networking system to make a multiplayer game that will work when two instances of it are open on the same computer or network. The first video shows how to set up the networking components and scene and the second shows how to find games over LAN. I would not reccomend using UNET for online matchmaking or gameplay, Photon Networking is a far superior tool in that regard, and it is covered below.</p>
+  		
+  		<p><strong>Covers:</strong> UNET, Network Discovery, Networking Concepts</p>
+  		
+  		<h3>Create a basic multiplayer game</h3>
+  		
+  		<div class="vid-container">
+  			<iframe width="560" height="315" src="https://www.youtube.com/embed/0H_ikQp9aTI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  	
+  		</div>
+  		
+  		
+		<h3> Find games over LAN with network discovery</h3>
+  		<div class = "vid-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/aFttCm9649A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2>Local Multiplayer with Multiple Gamepads/Keyboards/Mice</h2>
+  		
+  		<p><strong>Description:</strong> This videos will show you how to set up an effective input management system for recieving and managing inputs from multiple input devices. To achieve this we use the popular Unity asset <a href="https://assetstore.unity.com/packages/tools/utilities/rewired-21676" style="color: darkgreen" ><b>Rewired</b></a>, which the club Unity account has a paid copy of. You can use a free trial of this asset or talk to the club president at a meeting if you want to recieve access to the club Unity account and assets. To actually use this input management system in a game you should read through <a href="http://guavaman.com/projects/rewired/docs/QuickStart.html" style = "color:darkgreen"><b>THIS</b> </a> documentation and replicate what they do for the character controller.</p>
+  		
+  		<p><strong>Covers:</strong> Input Management</p>
+  		
+  		<h3>Setting up the Input Manager</h3>
+  		<div class = "vid-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/VkYVkRnjgjk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		<hr>
+		
+		<h2>Setting Up and Accessing an Online Database</h2>
+  		
+  		<p><strong>Description:</strong> This video series covers how to set up an online sql database through phpmyadmin and how to use  PHP to let Unity edit and access this database. This can be very useful for doing simple online login, high score lists, and cloud saves in Unity.</p>
+  		
+  		<p><strong>Covers:</strong> PHP, SQL, Databases</p>
+  		
+  		
+  		
+  		<div class = "vid-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/EByl95OMG2o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+  		
+  		<hr>
+  		
+		<h2>Online Multiplayer Using Photon</h2>
+  		
+  		<p><strong>Description:</strong> Photon is a networking framework similar to Unity's built in networking. Like the rewired asset, the club has a paid version of this asset available, however you will not need the paid version unless you actually publish your game or your game exceeds 100 current online users/sessions, so the trial should be fine for demos and testing. The video below shows how to set up a basic Photon multiplayer game/scene</p>
+  		
+  		
+  		
+  		<div class = "vid-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/MF5yhBkeiTU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		
+		
+		
+		
+  
+	  </div>	
+  </div>
+
+
+	</div>
+
+
+	
+
+
+</body>
+</html>
