@@ -1,0 +1,56 @@
+.dialog-content {
+    // Add custom styles for your projects descriptions here
+
+    .paragraph {
+        margin: 20px 0;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    iframe.youtube {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .phone-screenshot,
+    .pc-screenshot {
+        width: 100%;
+        margin: 15px; /* Genel olarak her ikisi için de margin ekledik */
+    }
+
+    .notice {
+        border: 1px solid rgb(0, 85, 0);
+        background-color: rgb(144, 196, 144);
+        color: rgb(1, 99, 1);
+        padding: 10px;
+    }
+
+    a {
+        color: #696969;
+        opacity: 1;
+        text-decoration: underline;
+        transition: opacity 0.2s ease; /* Geçiş efekti ekledik */
+    }
+    
+    a:hover {
+        opacity: 0.6;
+        color: rgb(0, 0, 0); /* Linkin hover durumunda rengi değiştirdik */
+    }
+
+    @media only screen and (min-width: 620px) {
+        iframe.youtube {
+            max-width: 728px;
+            height: 409px;
+        }
+
+        .phone-screenshot {
+            width: 300px;
+        }
+
+        .pc-screenshot {
+            width: 400px;
+        }
+    }
+}
