@@ -18,7 +18,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Proficiency</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#Art-work">Art Work</a></li>
+            
             <li><a href="#Volunteering">Volunteering</a></li>
             <!--<li><a href="#Contact">Contact Me</a></li>-->
          </ul>
@@ -38,7 +38,6 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#Art-work" onclick="toggleMenu()">Art Work</a></li>
           <li><a href="#Volunteering" onclick="toggleMenu()">Volunteering</a></li>
           <!--<li><a href="#Contact" onclick="toggleMenu()">Contact Me</a></li>-->
         </div>
@@ -47,9 +46,7 @@
 
       <!--We will be creating a section-->
       <section id="profile">
-         <div class="section__pic-container">
-             <img src="./assets/Profile-Photo/profile1.jpg" alt="Krethick Chakravarthy profile picture">
-         </div>
+         
          <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">Ahmet E. Dağ</h1>
@@ -86,14 +83,7 @@
       <section id="about">
       <p class="section__text__p1">Get to Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-        <img
-         src="./assets/3D-Models/mon1.png"
-         alt="Profile picture"
-         class="about-pic"
-         />
-      </div>
+      
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -247,17 +237,17 @@
             </div>
             <h2 class="experience-sub-title project-title"> Hyper Casual Arcade Idle System</h2>
             <div class="text-container"> 
-            <ul class="snake-content">
-              <li>My 1st undergraduate group project.</li>
-              <li>It is a Maze Game.</li>
-              <li>An AI controlled monster is the nemesis. You lose if the monster hits the player.</li>
-              <li>The objective of the game is to survive as long as possible.</li>
-              <li>The monster spawns in different positions every 60 seconds. Based on that it learns from the environment and makes the level more challenging.</li>
-              <br>
-              <strong>Role:</strong> Programmer(Team Project)
-              <br>
-              <strong>Technology used:</strong> Machine Learning (Genetic Algorithms) and AI NavMesh.
-          </ul>
+              <ul class="snake-content">
+                <li>Player movement: The player moves towards the mouse click position and smoothly faces the direction of movement.</li>
+                <li>Paper Collection: The player collects papers from tables and stacks them with a smooth animation.</li>
+                <li>Paper Placement: Papers can be placed on work desks, where they are processed to generate money.</li>
+                <li>Work Desk Processing: The work desk processes papers and animates while generating money.</li>
+                <li>Printer Functionality: A printer continuously prints papers that the player can collect.</li>
+                <br>
+                <strong>Role:</strong> Programmer (Individual Project)
+                <br>
+                <strong>Technology used:</strong> Unity, SOLID Principles, Game Design Patterns
+            </ul>
           </div>
           </div>
           <div class="details-container color-container">
@@ -392,270 +382,8 @@
       onclick="location.href='./#Art-work'"
       />
       </section>
-    <section id="Art-work">
-      <P class="section__text__p1">Blender</P>
-      <h1 class="title">Art Work</h1>
-      
-      <div class="experience-details-container">
-        <div class="about-containers">
-        <div class="details-container1 color-container">
-          <div class="article-container2" onclick="showModal('car.png', 'WireFrame view')">
-            <img id="myImg" src="./assets/Art-Work/car.png" alt="Project 1" class="project-img" width="312" height="350"/>
-          </div>
-          
-          <div id="myModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div>
-         
-          
-
-          <h2 class="experience-sub-title project-title"></h2>
-          <div class="btn-container">
-          </div>
-          <div class="text-container">
-          </br> 
-          <ul class="snake-content">
-            
-        </ul>
-        </div>
-        </div>
-        <div class="details-container1 color-container">
-          <div class="article-container2" onclick="showModal1('wine.png', 'WireFrame view')">
-            <img id="myImg1" src="./assets/Art-Work/Wine.png" alt="Project 1" class="project-img" width="312" height="350"/>
-          </div>
-
-          <div id="myModal1" class="modal">
-            <span class="close" onclick="closeModal1()">&times;</span>
-            <img class="modal-content" id="img02">
-            <div id="caption1"></div>
-          </div>
-
-          <h2 class="experience-sub-title project-title"></h2>
-          <div class="btn-container">
-          </div>
-          <div class="text-container">
-          </br> 
-          <ul class="snake-content">
-        </ul>
-         </div>
-      </div>
-       <div class="details-container1 color-container">
-          <div class="article-container2" onclick="showModal2('house.png', 'WireFrame view')">
-            <img id="myImg2" src="./assets/Art-Work/house.png" alt="Project 1" class="project-img" width="312" height="350"/>
-          </div>
-          
-          <div id="myModal2" class="modal">
-            <span class="close" onclick="closeModal2()">&times;</span>
-            <img class="modal-content" id="img03">
-            <div id="caption2"></div>
-          </div>
-
-          <h2 class="experience-sub-title project-title"></h2>
-          <div class="btn-container">
-          </div>
-          <div class="text-container">
-          </br> 
-          <ul class="snake-content">
-        </ul>
-        </div>
-      </div>
-    </div>
-      </div>
-      </section>     
-      <section id="Art-work1">
-       <div class="experience-details-container">
-          <div class="about-containers">
-          <div class="details-container1 color-container">
-            <div class="article-container2" onclick="showModal3('kitchen.png', 'WireFrame view')">
-              <img id="myImg3" src="./assets/Art-Work/kitchen.png" alt="Project 1" class="project-img" width="312" height="350"/>
-          </div>
-
-          <div id="myModal3" class="modal">
-            <span class="close" onclick="closeModal3()">&times;</span>
-            <img class="modal-content" id="img04">
-            <div id="caption3"></div>
-          </div>
-           
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-              
-          </ul>
-          </div>
-          </div>
-          <div class="details-container1 color-container">
-            <div class="article-container2" onclick="showModal4('ANDROID.png', 'WireFrame view')">
-              <img id="myImg4" src="./assets/Art-Work/ANDROID.png" alt="Project 1" class="project-img" width="312" height="350"/>
-            </div>
-            
-            <div id="myModal4" class="modal">
-              <span class="close" onclick="closeModal4()">&times;</span>
-              <img class="modal-content" id="img05">
-              <div id="caption4"></div>
-            </div>
-
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-          </ul>
-           </div>
-        </div>
-         <div class="details-container1 color-container">
-            <div class="article-container2" onclick="showModal5('TERRAIN.png', 'WireFrame view')">
-              <img id="myImg5" src="./assets/Art-Work/TERRAIN.jpg" alt="Project 1" class="project-img" width="312" height="350"/>
-            </div>
-             
-            <div id="myModal5" class="modal">
-              <span class="close" onclick="closeModal5()">&times;</span>
-              <img class="modal-content" id="img06">
-              <div id="caption5"></div>
-            </div>
-
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-          </ul>
-          </div>
-        </div>
-      </div>
-        </div>
-      </section>
-      <section id="Art-work2">
-        <div class="experience-details-container">
-           <div class="about-containers">
-           <div class="details-container1 color-container">
-             <div class="article-container2" onclick="showModal6('home.png', 'WireFrame view')">
-               <img id="myImg6" src="./assets/Art-Work/home.png" alt="Project 1" class="project-img" width="312" height="350"/>
-             </div>
-             
-             <div id="myModal6" class="modal">
-              <span class="close" onclick="closeModal6()">&times;</span>
-              <img class="modal-content" id="img07">
-              <div id="caption6"></div>
-            </div>
-
-             <h2 class="experience-sub-title project-title"></h2>
-             <div class="btn-container">
-             </div>
-             <div class="text-container">
-             </br> 
-             <ul class="snake-content">
-               
-           </ul>
-           </div>
-           </div>
-           <div class="details-container1 color-container">
-             <div class="article-container2">
-              <iframe width="359" height="270" src="https://www.youtube.com/embed/jiCXeXfNqAA?si=le5fYMm49s5DqpM9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-             <h2 class="experience-sub-title project-title"></h2>
-             <div class="btn-container">
-             </div>
-             <div class="text-container">
-             </br> 
-             <ul class="snake-content">
-           </ul>
-            </div>
-         </div>
-       </div>
-        </div>
-         <img src="./assets/arrow.png" 
-      alt="Arrow icon" 
-      class="icon arrow" 
-      onclick="location.href='./#Volunteering'"
-      />
-      </section>
-      <section id="Volunteering">
-        <P class="section__text__p1"></P>
-        <h1 class="title">Volunteering</h1>
+    
         
-        <div class="experience-details-container">
-          <div class="about-containers">
-          <div class="details-container1 color-container">
-            <div class="article-container2">
-              <img src="./assets/Good-Times/6.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
-            </div>
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-              
-          </ul>
-          </div>
-          </div>
-          <div class="details-container1 color-container">
-            <div class="article-container2">
-              <img src="./assets/Good-Times/7.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
-            </div>
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-          </ul>
-           </div>
-        </div>
-         <div class="details-container1 color-container">
-            <div class="article-container2">
-              <img src="./assets/Good-Times/11.png" alt="Project 1" class="project-img" width="312" height="350"/>
-            </div>
-            <h2 class="experience-sub-title project-title"></h2>
-            <div class="btn-container">
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-          </ul>
-          </div>
-        </div>
-      </div>
-        </div>
-        </section>       
-        <section id="Volunteering1">
-         <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container1 color-container">
-              <div class="article-container2">
-                <img src="./assets/Good-Times/10.jpg" alt="Project 1" class="project-img" width="312" height="350"/>
-              </div>
-              <h2 class="experience-sub-title project-title"></h2>
-              <div class="btn-container">
-              </div>
-              <div class="text-container">
-              </br> 
-              <ul class="snake-content">
-                
-            </ul>
-            </div>
-            </div>
-            <div class="details-container1 color-container">
-              <div class="article-container2">
-                <img src="./assets/Good-Times/12.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
-              </div>
-              <h2 class="experience-sub-title project-title"></h2>
-              <div class="btn-container">
-              </div>
-              <div class="text-container">
-              </br> 
-              <ul class="snake-content">
-            </ul>
-             </div>
-          </div>
-        </div>
           </div>
           
            <img src="./assets/arrow.png" 
@@ -670,13 +398,13 @@
              <div class="contact-info-upper-container">
               <div class="contact-info-container">
                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
-               <p><a href="mailto:krethick@gmail.com">krethick@gmail.com</a></p>
+               <p><a href="mailto:krethick@gmail.com">ahmetedag9@gmail.com</a></p>
                
              </div>
              
               <div class="contact-info-container">
                <img src="./assets/linkedin.png" alt="Linkedln icon" class="icon contact-icon"/>
-               <p><a href="https://www.linkedin.com/in/krethickchakravarthy/">Linkedln</a></p>
+               <p><a href="https://www.linkedin.com/in/adag21044/">Linkedln</a></p>
 
              </div>
              </div>
@@ -688,7 +416,6 @@
                   <li><a href="#about">About</a></li>
                   <li><a href="#experience">Proficiency</a></li>
                   <li><a href="#projects">Projects</a></li>
-                  <li><a href="#Art-work">Art Work</a></li>
                   <li><a href="#Volunteering">Volunteering</a></li>
                   <!--<li><a href="#Contact">Memorable</a></li>-->
                </ul>
