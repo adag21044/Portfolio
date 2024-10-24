@@ -1,362 +1,842 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-
-
-<link rel = "stylesheet" href = "styles/newindex.css">
-<link rel = "stylesheet" href = "styles/socialbuttons.css">
-<link rel = "stylesheet" href="styles/tiles.css">
-<link rel = "stylesheet" href="styles/video.css">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto|Do+Hyeon" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-
-
-
-
-<title>UMD Game Developers Club</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./assets/krethick.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krethick Chakravarthy</title>
+    <!--Press Alt+shift+arrow down to duplicate-->
+    <!--Link style.css and mediaqueries.css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
-
-<body>
-
-<script src = "js/template.js" type = "text/javascript"></script>
-<script src = "js/smoothscroll.js" type = "text/javascript"></script>
-
-<div id = "navarea">
-		<script type = "text/javascript">makeNavbar(); </script>	
-</div>	
-
-
-<div class = "shader">
-        <img src="images/darkness.png" class="darkimage">
-<div id = "videowrapper" >
- 
-
-
-<img src="images/NewLogoJustController.png" style="margin-top: -200px">
-<div class="innerdark">
-<h1>Portfolio</h1>
-</div>
-
-<button class="buttontest1 other" onclick="doScrolling('#joinnow', 1000)" >JOIN NOW</button>
-
-<button class="buttontest2 other" onclick="doScrolling('#games', 1000)">GAMES</button>
-
-<button  class="buttontest3 other" onclick="doScrolling('#events', 1000)" >EVENTS</button>
-
-
-
-
-<video autoplay muted loop>
-<source src="videos/test.mp4" type="video/mp4">
-</video>
-
-</div>
-</div>
-
-
-<div id="joinnow"></div>
-<div class="main" style="overflow: auto">
-        
-        <div class="dumbthing"></div>
-
-<h1 style="text-align: center; max-width: 600px; margin: auto" >Join UMD Game Developers Club!</h1>
-
-<hr>
-
-<div class="wrap" >
-
-
-<form action="https://www.facebook.com/groups/umdgaming/">
-<button class="plainbutton">
-<div class="tile maintile" style="background-color: #3B5998; height: 300px;box-shadow: none;">
-
- 
-        <h3>Events and Work</h3>
-    <i class="fab fa-facebook" style="font-size: 100px;"></i>
-    <ul class="dashed">
-        <li>Info on all upcoming club events</li>
-        <li>Jobs & internship opportunities</li>
-        <li>Club news and polls</li>
-        </ul>
-    </div>
-    </button>
-    </form>
-
-<form action="https://discord.gg/djtZR4M">
-        <button class="plainbutton">
-
-<div class="tile maintile" style="background-color: #7289DA; height: 300px; box-shadow: none"> 
- 
-        <h3>Community</h3>
-        <i class="fab fa-discord" style="font-size: 100px;"></i>
-        
-        <ul class="dashed">
-        <li>Industry news & discussion</li>
-        <li>Help with projects</li>
-        <li>Memes</li>
-        </ul>
+<body> 
+   <nav id="desktop-nav"> <!--nav is used for navigation-->
+       <div class="logo">Welcome to my Portfolio</div>
+       <div>
+         <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Proficiency</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Art-work">Art Work</a></li>
+            <li><a href="#Volunteering">Volunteering</a></li>
+            <!--<li><a href="#Contact">Contact Me</a></li>-->
+         </ul>
+       </div>
+      </nav>
      
+      <!--This part is used for mobile navigation-->
+      <nav id="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+         <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Art-work" onclick="toggleMenu()">Art Work</a></li>
+          <li><a href="#Volunteering" onclick="toggleMenu()">Volunteering</a></li>
+          <!--<li><a href="#Contact" onclick="toggleMenu()">Contact Me</a></li>-->
+        </div>
+      </div>
+      </nav>
 
-</div>
+      <!--We will be creating a section-->
+      <section id="profile">
+         <div class="section__pic-container">
+             <img src="./assets/Profile-Photo/profile1.png" alt="Krethick Chakravarthy profile picture">
+         </div>
+         <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Krethick Chakravarthy</h1>
+          <p class="section__text__p2">Game Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+            
+              onclick="window.open('./assets/Resume/Krethick_Chakravarthy_Resume.pdf')"
+              
+            >Download Resume
+          </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >Contact Info
+          </button>
+          </div>
 
-</button>
-</form>
-<form action="https://www.facebook.com/groups/umdgaming/">
-        <button class="plainbutton">
-<div class="tile maintile" style="background-color: black;height: 300px; box-shadow: none;">
-       
-        
-       
-        <h3>Weekly Meeting</h3>
-      
-                <i class="fas fa-calendar-alt" style="font-size: 100px;"></i>
-                <ul class="dashed">
-                        <li>Virtual Meeting from 7:30-8:30</li>
-                        <li>Demos</li>
-			<li>Game Book Club</li>
-                </ul>
-        
-</div>
-</button>
-</form>
+          <div id="social-container">
+             <img src="./assets/linkedin.png" alt="My Linkedln Profile" class="icon"
+             onclick="location.href='https://www.linkedin.com/in/krethickchakravarthy/'"
+             />
 
-</div>
+          <div id="social-containers">
+             <img src="./assets/github.png" alt="My Github Profile" class="icon"
+             onclick="location.href='https://github.com/krethick'"
+             />
 
-<br/>
-<br/>
-<br/>
+          </div>
+         </div>
+      </section>
+      <!--Start with an about section-->
+      <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+        <img
+         src="./assets/3D-Models/mon1.png"
+         alt="Profile picture"
+         class="about-pic"
+         />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" 
+            alt="experience icon"
+            class="icon"
+            />
+             <h3>Experience</h3>
+             <!--<img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
+            <p>BYJU'S</p>
+            <p> Game Developer (Internship)</p>
+            <p> Dec 2020 - June 2021</p>
+           <br>
+           <!-- <img src="./assets/byjus.png" alt="Byjus Logo" width="50" height="50">-->
+            <p>BYJU'S</p>
+            <p> Junior Game Developer (Fulltime)</p>
+            <p> Feb 2022 - Dec 2022</p>
+            <br>
+            <p>Adriotts</p>
+            <p> Full Stack Developer (Internship)</p>
+            <p> Jan 2023 - Aug 2023</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.png" 
+          alt="Education icon"
+          class="icon"
+          />
+          <h3>Education</h3>
+          <p>Christ (Deemed to be University)</p>
+          <p>Bachelor of Computer Applications</p>
+          <p> June 2018 - May 2021</p>
+        </div>
+        </div>
+        <div class="text-container">
+         <p>
+          <!--An Inquisitive computer science student and a dedicated team player who 
+          is keen on learning more and finding his place in the gaming industry,and
+          in the process playing a part in helping the company achieve its goals.!-->
+         </p>
+        </div>
+      </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+       <p class="section__text__p1">Explore My</p>
+       <h1 class="title">Technical Skills</h1>
+       <div class="experience-details-container">
+         <div class="about-containers">
+           <div class="details-container">
+              <h2 class="experience-sub-title">Game Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4>UNITY ENGINE</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
+                    </div>
+                </article>
 
-<div class ="graybg" style="overflow: auto; width:100vw; margin-left:-50px; padding-left:50px; margin-top:-50px" id = "events">
-        <div style="width: 100vw; max-width: 900px;  margin:0 auto 0 auto; margin-top: 10px; text-align: center">
-        <h1 >Club Events</h1>
-     <hr>
-     <p>Note: Always check our Discord the day of an event as room numbers or other info may change</p>
-   
-     
-  
-<table class="myTable" >
-        <tr>
-          <th>Date</th>
-          <th>Event</th>
-	  <th>Time</th>
-          <th>Location</th>
-        </tr>
-        <tr>
-          <td>Sept 10th</td>
-          <td>Intro Meeting</td>
-	  <td>7:30-8:30 PM</td>
-          <td>ONLINE</td>
-        </tr>
-        
-        <tr>
-          <td>Sept 17th</td>
-          <td>Meeting</td>
-	  <td>7:30-8:30 PM</td>
-          <td>ONLINE</td>
-        </tr>
-	
-	<tr>
-          <td>Sept 18-20th</td>
-          <td>UMBC/UMD Collaborate Game Jam</td>
-	  <td>5:00 PM Sept 18th -5:00 PM Sept 20th</td>
-          <td>ONLINE</td>
-        </tr>
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container21">VISUAL SCRIPTING</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
+                  </div>
+                </article>
 
-        <tr>
-                <td>Sept 24th</td>
-                <td>Meeting</td>
-                <td>7:30-8:30 PM</td>
-                <td>ONLINE</td>
-              </tr>
-	
-       
-      </table>
-     
-     
-     </div>
-     
-     </div>
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container22">C# Programming</h4>
+                     <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                  </div>
+                </div>
+                </article>
 
-
-
-
-
-
-
-
-     <div id = "games"></div>
-<br/>
-<br/>
-<br/>
-
-
-<h1 style="text-align: center !important;">Game Jam Games</h1>
-
-<p style="text-align: center !important;">These are some of the games created during club events. <a href="games.html">Full game list here</a></p>
-
-<div class="wrap">   
-
-
-
-        <div class="tile">
-		   
-                <img alt = "Alt text" src= "images/screenshots/tiledeus.png" class="videowrapperimg">
-                <img alt = "Alt text" src="images/darkness.png" class= "darkback">
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container23">Blender Software</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets//checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container24">Jira (Agile)</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+         </div>
+           <div class="details-container">
+              <h2 class="experience-sub-title">Web Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container17">.NET CORE</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container16">SQL</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container15">FLASK</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 76%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container13">REACT</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 45%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container14">GIT-Version Control</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container12">HTML</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container19">CSS</h3>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+         </div>
+           <div class="details-container">
+              <h2 class="experience-sub-title">Other Programming Languages </h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container16">C</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 88%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container25">C++</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 83%;"></div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container26">Java</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 83%;"></div>
+                  </div>
+                </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container27">Python</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 83%;"></div>
+                  </div>
+                </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h4 class="text-container28">Machine Learning</h4>
+                    <div class="progress-bar-container">
+                      <div class="progress-bar" style="width: 70%;"></div>
+                  </div>
+                </div>
+                </article>
+              </div>
+           </div>
+         </div>
+       </div>
+       <img src="./assets/arrow.png" 
+       alt="Arrow icon" 
+       class="icon arrow" 
+       onclick="location.href='./#projects'"
+       />
+      </section>
+      <section id="projects">
+      <P class="section__text__p1">Browse My</P>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <iframe width="350" height="315" src="https://www.youtube.com/embed/BTqSwXFS-Qk?si=embhboAWbOBXrnLJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="experience-sub-title project-title"> Glowland (2020)</h2>
+            <div class="text-container"> 
+            <ul class="snake-content">
+              <li>My 1st undergraduate group project.</li>
+              <li>It is a Maze Game.</li>
+              <li>An AI controlled monster is the nemesis. You lose if the monster hits the player.</li>
+              <li>The objective of the game is to survive as long as possible.</li>
+              <li>The monster spawns in different positions every 60 seconds. Based on that it learns from the environment and makes the level more challenging.</li>
+              <br>
+              <strong>Role:</strong> Programmer(Team Project)
+              <br>
+              <strong>Technology used:</strong> Machine Learning (Genetic Algorithms) and AI NavMesh.
+          </ul>
+          </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+           <iframe width="350" height="315" src="https://www.youtube.com/embed/8MNfztlmKnw?si=12hNcK-7TMdpbd5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="experience-sub-title project-title">Osmo Work Sheets (2021)</h2>
+            <div class="text-container">
                
-               <div class="text">
-               <h1><a href="https://josfeld.itch.io/deus-rex">Deus Rex</a></h1>
-               <h2 class="animate-text">A retro style arena shooter with a focus on aerial movement</h2>
-               <p class="animate-text">Made for the Miz Jam 1, where contestants all had to use the same art pack to create a game.</p>
-               </div>
+              <div class="btn-container1">
+                <!-- 
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Projects/PROJECT_PRESENTATION.pdf')">
+                  PDF
+                </button>
+                -->
+              </div>
+            <ul class="snake-content">
+              <li>These are interactive worksheets for kids below Grade 3.</li> 
+              <li>These are programmed and validated based on user gameplay.</li>
+              <li>The game consists of multiple worksheets.</li>
+              <li>Each time the player successfully accomplishes the objective and wins, the system learns, and the game continues with a new, slightly harder objective to be achieved.</li>
+              <li>Features included in this systems are:- Character Guidance, Auto Correction, Hint
+                System.</li>
+              <li>Each time the player completes a certain worksheet, he/she goes to the next stage.</li>
+              <br>
+              <strong>Role:</strong> Game Developer (Internship)
+              <br>
+              <strong>Tools and Programming Language:</strong> Unity, Bolt (Visual Scripting tool) and C#
+        </ul>
+         </div>
+      </div>
+       <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/TDmsOLmvTUQ?si=VehageyobC_Jxd2u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">BYJU'S Early Learn App (2022) </h2>
+          <ul class="snake-content">
+            <li>A mobile app that focuses on three main subjects:- Maths, English and Science.</li>
+            <li>Gamifying education with Disney characters to improve involvement in Learning and to provide interactive gameplay.</li>
+            <li>Quiz,match and drag based games are made for children from PRE-KG To Grade 3.</li>
+            <li>Main focus of the product is to make subjects more entertaining to learn.</li>
+            <br>
+            <strong>Role:</strong> Junior Game Developer (Full Time Employee)
+            <br>
+            <strong>Tools:</strong> Unity and Visual Scripting
+        </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+      
+      <!--<img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#projects'"
+      />-->
+    </section>
+    <section id="projects1">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <iframe width="350" height="315" src="https://www.youtube.com/embed/NSocM_5JqUk?si=q4vf-esZFz3V5aGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h2 class="experience-sub-title project-title">Snake Game (2023)</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/krethick/Snake_game'">
+                Github
+              </button>
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+              <li>The snake moves at a constant speed within the walls.</li>
+              <li>Every tile the snake touches turns green.</li>
+              <li>Whenever the snake hits the border, it bounces off the edge.</li>
+              <li>The watermelon moves randomly in different directions based on the time limit (6 seconds).</li>
+              <li>Every time the snake consumes, the score gets increased by 1 point.</li>
+              <br>
+              <strong>Role:</strong> Solo Project
+          </ul>
+          </div>
+          </div>
+      <div class="details-container color-container">
+          <div class="article-container1">
+            <iframe width="360" height="320"
+              src="./assets/Projects/flappy_bird.mp4" 
+             frameborder="0"
+            allowfullscreen>
+    </iframe>
+          </div>
+          <h2 class="experience-sub-title project-title1">Flappy Bird Game (2024)</h2>
+          <div class="text-container"> 
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/krethick/Flappy-Bird'">
+                Github
+              </button>   
+            </div>
+          <ul class="snake-content">
+            <li>A small game where the bird can shoot rockets.</li>
+            <li>The lower pipe moves downwards once a missile hits the red button.</li>
+            <li>Included skull objects as enemies.</li>
+            <li>Implemented Player Prefs to store the data.</li>
+            <li>In the game there is an option to clear the high score.</li>
+            <br>
+            <strong>Role:</strong> Solo Project
+           
+        </ul>
+         </div>
+      </div>
+      
+       <div class="details-container color-container">
+          <div class="article-container">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/YCGM-Ju5g7I?si=E6KI3v2tpd9NBhoB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <h2 class="experience-sub-title project-title">Solar System Project </h2>
+          <ul class="snake-content">
+            <li>A basic solar system project where the planets revolve around the sun.</li>
+            <li>When each planet is clicked once it zooms in when clicked again it zooms out.</li>
+            <br>
+            <strong>Role:</strong> Solo Project
+            <br>
+            <strong>Tools:</strong> Unity 
+        </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#Art-work'"
+      />
+      </section>
+    <section id="Art-work">
+      <P class="section__text__p1">Blender</P>
+      <h1 class="title">Art Work</h1>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container1 color-container">
+          <div class="article-container2" onclick="showModal('car.png', 'WireFrame view')">
+            <img id="myImg" src="./assets/Art-Work/car.png" alt="Project 1" class="project-img" width="312" height="350"/>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
          
+          
+
+          <h2 class="experience-sub-title project-title"></h2>
+          <div class="btn-container">
+          </div>
+          <div class="text-container">
+          </br> 
+          <ul class="snake-content">
+            
+        </ul>
         </div>
+        </div>
+        <div class="details-container1 color-container">
+          <div class="article-container2" onclick="showModal1('wine.png', 'WireFrame view')">
+            <img id="myImg1" src="./assets/Art-Work/Wine.png" alt="Project 1" class="project-img" width="312" height="350"/>
+          </div>
 
+          <div id="myModal1" class="modal">
+            <span class="close" onclick="closeModal1()">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption1"></div>
+          </div>
 
+          <h2 class="experience-sub-title project-title"></h2>
+          <div class="btn-container">
+          </div>
+          <div class="text-container">
+          </br> 
+          <ul class="snake-content">
+        </ul>
+         </div>
+      </div>
+       <div class="details-container1 color-container">
+          <div class="article-container2" onclick="showModal2('house.png', 'WireFrame view')">
+            <img id="myImg2" src="./assets/Art-Work/house.png" alt="Project 1" class="project-img" width="312" height="350"/>
+          </div>
+          
+          <div id="myModal2" class="modal">
+            <span class="close" onclick="closeModal2()">&times;</span>
+            <img class="modal-content" id="img03">
+            <div id="caption2"></div>
+          </div>
 
- <div class="tile">
-  
-         <img alt = "Alt text" src= "images/screenshots/TileJaccuse.png" class="videowrapperimg">
-         <img alt = "Alt text" src="images/darkness.png" class= "darkback">
+          <h2 class="experience-sub-title project-title"></h2>
+          <div class="btn-container">
+          </div>
+          <div class="text-container">
+          </br> 
+          <ul class="snake-content">
+        </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+      </section>     
+      <section id="Art-work1">
+       <div class="experience-details-container">
+          <div class="about-containers">
+          <div class="details-container1 color-container">
+            <div class="article-container2" onclick="showModal3('kitchen.png', 'WireFrame view')">
+              <img id="myImg3" src="./assets/Art-Work/kitchen.png" alt="Project 1" class="project-img" width="312" height="350"/>
+          </div>
+
+          <div id="myModal3" class="modal">
+            <span class="close" onclick="closeModal3()">&times;</span>
+            <img class="modal-content" id="img04">
+            <div id="caption3"></div>
+          </div>
+           
+            <h2 class="experience-sub-title project-title"></h2>
+            <div class="btn-container">
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+              
+          </ul>
+          </div>
+          </div>
+          <div class="details-container1 color-container">
+            <div class="article-container2" onclick="showModal4('ANDROID.png', 'WireFrame view')">
+              <img id="myImg4" src="./assets/Art-Work/ANDROID.png" alt="Project 1" class="project-img" width="312" height="350"/>
+            </div>
+            
+            <div id="myModal4" class="modal">
+              <span class="close" onclick="closeModal4()">&times;</span>
+              <img class="modal-content" id="img05">
+              <div id="caption4"></div>
+            </div>
+
+            <h2 class="experience-sub-title project-title"></h2>
+            <div class="btn-container">
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+          </ul>
+           </div>
+        </div>
+         <div class="details-container1 color-container">
+            <div class="article-container2" onclick="showModal5('TERRAIN.png', 'WireFrame view')">
+              <img id="myImg5" src="./assets/Art-Work/TERRAIN.jpg" alt="Project 1" class="project-img" width="312" height="350"/>
+            </div>
+             
+            <div id="myModal5" class="modal">
+              <span class="close" onclick="closeModal5()">&times;</span>
+              <img class="modal-content" id="img06">
+              <div id="caption5"></div>
+            </div>
+
+            <h2 class="experience-sub-title project-title"></h2>
+            <div class="btn-container">
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+          </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+      </section>
+      <section id="Art-work2">
+        <div class="experience-details-container">
+           <div class="about-containers">
+           <div class="details-container1 color-container">
+             <div class="article-container2" onclick="showModal6('home.png', 'WireFrame view')">
+               <img id="myImg6" src="./assets/Art-Work/home.png" alt="Project 1" class="project-img" width="312" height="350"/>
+             </div>
+             
+             <div id="myModal6" class="modal">
+              <span class="close" onclick="closeModal6()">&times;</span>
+              <img class="modal-content" id="img07">
+              <div id="caption6"></div>
+            </div>
+
+             <h2 class="experience-sub-title project-title"></h2>
+             <div class="btn-container">
+             </div>
+             <div class="text-container">
+             </br> 
+             <ul class="snake-content">
+               
+           </ul>
+           </div>
+           </div>
+           <div class="details-container1 color-container">
+             <div class="article-container2">
+              <iframe width="359" height="270" src="https://www.youtube.com/embed/jiCXeXfNqAA?si=le5fYMm49s5DqpM9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+             <h2 class="experience-sub-title project-title"></h2>
+             <div class="btn-container">
+             </div>
+             <div class="text-container">
+             </br> 
+             <ul class="snake-content">
+           </ul>
+            </div>
+         </div>
+       </div>
+        </div>
+         <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow" 
+      onclick="location.href='./#Volunteering'"
+      />
+      </section>
+      <section id="Volunteering">
+        <P class="section__text__p1"></P>
+        <h1 class="title">Volunteering</h1>
         
-        <div class="text">
-        <h1><a href=" https://bobotast.itch.io/jaccuse">J'Accuse!</a></h1>
-        <h2 class="animate-text">An 8-Bit detective game</h2>
-        <p class="animate-text">Your Tim Tams  have been stolen, but you haven't a clue who dunnit! Everyone else can give you a clue, but a few disreputable individuals aren't telling the truth. When you think you know who it was, accuse them! And bask in sweet, sweet justice. J'accuse!</p>
+        <div class="experience-details-container">
+          <div class="about-containers">
+          <div class="details-container1 color-container">
+            <div class="article-container2">
+              <img src="./assets/Good-Times/6.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
+            </div>
+            <h2 class="experience-sub-title project-title"></h2>
+            <div class="btn-container">
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+              
+          </ul>
+          </div>
+          </div>
+          <div class="details-container1 color-container">
+            <div class="article-container2">
+              <img src="./assets/Good-Times/7.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
+            </div>
+            <h2 class="experience-sub-title project-title"></h2>
+            <div class="btn-container">
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+          </ul>
+           </div>
         </div>
-  
-</div>
-
-
-<div class="tile">
-		  
-        <img alt = "Alt text" src= "images/screenshots/tilemoonarcher.png" class="videowrapperimg">
-        <img alt = "Alt text" src="images/darkness.png" class= "darkback">
-   
-   <div class="text">
-   <h1><a href="https://4noki.itch.io/moon-archer-shooting-stars">Moon Archer Shooting Stars</a></h1>
-   <h2 class="animate-text">Made for the <a href="https://itch.io/jam/shoot-for-the-stars-jam">Shoot For the Stars Jam</a></h2>
-   <p class="animate-text">The gatekeeper of an elevator to the moon meets day after day a girl without papers. An archer pining for her love shoots messages to the moon as shooting stars.</p>
-   </div>
- 
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<h1 style="text-align: center !important;">Student Games</h1>
-
-
-<p style="text-align: center !important;">These are some of the larger scale games released of created by members.</p>
-
-
-<div class="wrap">
-
-
-
-<!----
-<div class="tile">
-
-<img alt = "Alt text" src= "images/screenshots/tilegg.png">
-<img alt = "Alt text" src="images/darkness.png" class= "darkback">
-
-<div class="text">
-<h1>Cube vs Sphere</h1>
-<h2 class="animate-text">A mobile physics based puzzle game about quickly escaping caves</h2>
-<p class="animate-text">
-<i class="fab fa-android"></i>/<i class="fab fa-apple"></i> Coming soon to Android and IOS<br/>
-<a href="https://www.nbcwashington.com/news/local/University-Maryland-Students-Develop-Anti-Terror-Video-Game_Washington-DC-426357941.html?_osource=SocialFlowTwt_DCBrand"><i class="far fa-newspaper"></i> News Article About Game</a>
-</p>
-
-</div>
-
-</div>
-
---->
-
-<div class="tile">
-        <img alt = "Alt text" src= "images/screenshots/tileshoot.png">
-        <img alt = "Alt text" src="images/darkness.png" class= "darkback">
-                   
-   <div class="text">
-   <h1><a href="https://store.steampowered.com/app/931700/Shooting_Hurts/">Shooting Hurts</a></h1>
-   <h2 class="animate-text">A small arena FPS where shooting damages you.</h2>
-   <p class="animate-text">  <a href="https://store.steampowered.com/app/931700/Shooting_Hurts/"><i class="fa fa-steam"></i> Download Link</a>
-   </div>
-                                                 
-</div>
-
-
-<div class="tile">
-
- <img alt = "Alt text" src= "images/screenshots/tileog.png">
- <img alt = "Alt text" src="images/darkness.png" class= "darkback">			
-<div class="text">
-<h1><a href="games/OG.html">Operation Genovese</a></h1>
-<h2 class="animate-text">A visual novel about deradicalizing potential terrorists</h2>
-<p class="animate-text"><a href="OperationGenovese.html"><i class="fas fa-play"></i> Play Link</a><br/>
-<a href="https://www.nbcwashington.com/news/local/University-Maryland-Students-Develop-Anti-Terror-Video-Game_Washington-DC-426357941.html?_osource=SocialFlowTwt_DCBrand"><i class="far fa-newspaper"></i> News Article About Game</a></p>
-</div>
-  
-</div>
-
-<div class="tile">
- <img alt = "Alt text" src= "images/screenshots/tilebib.png">
- <img alt = "Alt text" src="images/darkness.png" class= "darkback">
+         <div class="details-container1 color-container">
+            <div class="article-container2">
+              <img src="./assets/Good-Times/11.png" alt="Project 1" class="project-img" width="312" height="350"/>
+            </div>
+            <h2 class="experience-sub-title project-title"></h2>
+            <div class="btn-container">
+            </div>
+            <div class="text-container">
+            </br> 
+            <ul class="snake-content">
+          </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+        </section>       
+        <section id="Volunteering1">
+         <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container1 color-container">
+              <div class="article-container2">
+                <img src="./assets/Good-Times/10.jpg" alt="Project 1" class="project-img" width="312" height="350"/>
+              </div>
+              <h2 class="experience-sub-title project-title"></h2>
+              <div class="btn-container">
+              </div>
+              <div class="text-container">
+              </br> 
+              <ul class="snake-content">
                 
-<div class="text">
-<h1><a href="games/BIB.html">Bert is Bald</a></h1>
-<h2 class="animate-text">A procedurally generated twin stick shooter</h2>
-<p class="animate-text">  <a href="https://guin36.itch.io/bbb"><i class="fas fa-download"></i> Download Link</a>
-</div>
-                                          
-</div>
+            </ul>
+            </div>
+            </div>
+            <div class="details-container1 color-container">
+              <div class="article-container2">
+                <img src="./assets/Good-Times/12.jpeg" alt="Project 1" class="project-img" width="312" height="350"/>
+              </div>
+              <h2 class="experience-sub-title project-title"></h2>
+              <div class="btn-container">
+              </div>
+              <div class="text-container">
+              </br> 
+              <ul class="snake-content">
+            </ul>
+             </div>
+          </div>
+        </div>
+          </div>
+          
+           <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"
+        />
+        </section>
+        <section id="contact">
+             <p class="section__text__p1">Get in Touch</p>
+             <h1 class="title">Contact Me</h1>
+             <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+               <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+               <p><a href="mailto:krethick@gmail.com">krethick@gmail.com</a></p>
+               
+             </div>
+             
+              <div class="contact-info-container">
+               <img src="./assets/linkedin.png" alt="Linkedln icon" class="icon contact-icon"/>
+               <p><a href="https://www.linkedin.com/in/krethickchakravarthy/">Linkedln</a></p>
 
-
-
-
-
-</div>
-
-
-
-
-<hr>
-
-<!---END MAIN-->
-</div>
-
-<div id = "contact"></div>
-
-<div id ="footer">
-	<script>makeFooter(); </script>
-</div>
-
-    <script>
-        function Scrollto() {
-                document.getElementById("joinnow").scrollIntoView();
-        }
-        </script>
-    
-	
-
-
-
-    
+             </div>
+             </div>
+        </section>
+         <footer>
+           <nav>
+               <div class="nav-links-container8">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Proficiency</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#Art-work">Art Work</a></li>
+                  <li><a href="#Volunteering">Volunteering</a></li>
+                  <!--<li><a href="#Contact">Memorable</a></li>-->
+               </ul>
+               </div>
+              <!--<p>Copyright &#169; 2023 Krethick Chakravarthy. All Rights Reserved.</p>--> 
+           </nav>
+         </footer>
+  <script src="script.js"></script> <!--Link script.js-->
 </body>
 </html>
