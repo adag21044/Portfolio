@@ -843,3 +843,10 @@ height: 316px;
    }
 }
 
+
+html, body {
+   overflow-x: hidden; /* Yatay kaydırmayı tamamen kapatır */
+   max-width: 100vw; /* İçeriğin ekran boyutunda kalmasını sağlar */
+   margin: 0;
+   padding: 0;
+}
