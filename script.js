@@ -125,3 +125,20 @@ function showModal(imageSrc, altText) {
     var modal = document.getElementById('myModal6');
     modal.style.display = 'none';
   }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    
+    // Save preference in local storage
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
+}
+
+// Load dark mode preference on page load
+window.onload = function () {
+    const darkModePreference = localStorage.getItem('dark-mode');
+    if (darkModePreference === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+};
+

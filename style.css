@@ -850,3 +850,49 @@ html, body {
    margin: 0;
    padding: 0;
 }
+
+/* General Dark Mode Styles */
+body.dark-mode {
+   background-color: black; /* Sets background to black */
+   color: white; /* Sets text color to white */
+}
+
+.dark-mode nav,
+.dark-mode .details-container,
+.dark-mode footer,
+.dark-mode .btn,
+.dark-mode .project-title,
+.dark-mode .section__text {
+   background-color: black;
+   color: white;
+   border-color: white;
+}
+
+.dark-mode .btn-color-1 {
+   background-color: white;
+   color: black;
+}
+
+.dark-mode .btn-color-1:hover {
+   background-color: #f0f0f0;
+}
+
+.dark-mode .btn-color-2 {
+   background-color: black;
+   color: white;
+   border: 1px solid white;
+}
+
+.dark-mode a {
+   color: white;
+}
+
+.dark-mode .icon {
+   filter: invert(1);
+}
+
+/* Ensure text within details-container elements is white in dark mode */
+.dark-mode .details-container,
+.dark-mode .details-container * {
+    color: white;
+}
