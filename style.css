@@ -966,4 +966,80 @@ body.dark-mode {
  .toggle-switch input:not(:checked) + .slider + .icon-container .moon-icon {
    opacity: 1;
  }
- 
+ /* General styling for mobile devices */
+@media only screen and (max-width: 768px) {
+   /* Adjust section margins and padding */
+   section {
+       margin: 0 1rem;
+       padding: 2rem 0;
+   }
+
+   /* Stack project cards vertically on mobile */
+   .experience-details-container {
+       display: flex;
+       flex-direction: column; /* Stacks the cards vertically */
+       align-items: center;    /* Centers the cards */
+   }
+
+   .about-containers,
+   .details-container {
+       width: 100%;            /* Make the cards take full width */
+       margin-bottom: 2rem;    /* Add space between cards */
+   }
+
+   .project-img {
+       width: 100%;            /* Image should take full width on mobile */
+       height: auto;           /* Maintain aspect ratio */
+   }
+
+   /* Adjust iframe for embedded videos */
+   iframe {
+       width: 100%;            /* Make iframes take full width */
+       height: auto;           /* Auto-adjust height based on width */
+   }
+
+   .article-container {
+       flex-direction: column; /* Stack article contents */
+       align-items: center;    /* Center the content */
+       gap: 1rem;              /* Add some gap between elements */
+   }
+
+   .project-title,
+   .project-btn {
+       text-align: center;     /* Center align titles and buttons */
+   }
+}
+
+
+/* Mobil görünümde kartları alt alta diz ve ekran genişliğine sığdır */
+@media screen and (max-width: 768px) {
+    .experience-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-containers {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .details-container {
+        width: 90%; /* Ekranın %90’ını kaplasın, gerektiğinde %100 yapabilirsiniz */
+        margin-bottom: 1.5rem; /* Kartlar arasında biraz boşluk bırak */
+        padding: 1rem; /* İçeriklerin daha iyi görünmesi için padding ekleyin */
+    }
+
+    iframe {
+        width: 100%; /* Videoların da tam genişlikte görünmesini sağlar */
+        height: auto;
+    }
+
+    section {
+      padding: 1rem; /* Section padding’ini azaltarak içerikleri sıkıştırabilirsiniz */
+  }
+
+  .text-container, .snake-content {
+      margin-left: 0; /* Sol boşlukları mobilde sıfırlayın */
+      padding: 0.5rem; /* İç boşlukları optimize edin */
+  }
+}
