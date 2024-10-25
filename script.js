@@ -129,16 +129,15 @@ function showModal(imageSrc, altText) {
   function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     
-    // Save preference in local storage
     const isDarkMode = document.body.classList.contains('dark-mode');
     localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
-}
+  }
 
 // Load dark mode preference on page load
 window.onload = function () {
-    const darkModePreference = localStorage.getItem('dark-mode');
-    if (darkModePreference === 'enabled') {
-        document.body.classList.add('dark-mode');
-    }
+  const darkModePreference = localStorage.getItem('dark-mode');
+  if (darkModePreference === 'enabled') {
+    document.body.classList.add('dark-mode');
+    document.getElementById('dark-mode-toggle').checked = true;
+  }
 };
-

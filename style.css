@@ -896,3 +896,74 @@ body.dark-mode {
 .dark-mode .details-container * {
     color: white;
 }
+
+.toggle-switch {
+   position: relative;
+   width: 60px;
+   height: 30px;
+   background-color: #ccc;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: background-color 0.4s;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .toggle-switch input {
+   display: none;
+ }
+ 
+ .toggle-switch .slider {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   background-color: white;
+   border-radius: 50%;
+   top: 0;
+   left: 0;
+   transition: 0.4s;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ 
+
+ .toggle-switch .sun-icon,
+.toggle-switch .moon-icon {
+  font-size: 14px;
+  opacity: 1;
+  transition: opacity 0.4s;
+  position: absolute;
+}
+ 
+.toggle-switch .sun-icon {
+   left: 8px;
+   opacity: 1;
+ }
+ 
+ .toggle-switch .moon-icon {
+   right: 8px;
+   opacity: 0;
+ }
+ 
+ .toggle-switch input:checked + .slider {
+   transform: translateX(30px);
+ }
+ 
+ .toggle-switch input:checked + .slider .sun-icon {
+   opacity: 0;
+ }
+ 
+ .toggle-switch input:checked + .slider .moon-icon {
+   opacity: 1;
+ }
+ 
+ .toggle-switch input:not(:checked) + .slider + .icon-container .sun-icon {
+   opacity: 0;
+ }
+ 
+ .toggle-switch input:not(:checked) + .slider + .icon-container .moon-icon {
+   opacity: 1;
+ }
+ 

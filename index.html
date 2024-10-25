@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body> 
-  <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <label class="toggle-switch">
+    <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+    <span class="slider">
+      <span class="sun-icon">☀️</span>
+      <span class="moon-icon">🌙</span>
+    </span>
+  </label>
+  
 
    <nav id="desktop-nav"> <!--nav is used for navigation-->
        <div class="logo">Welcome to my Portfolio</div>
