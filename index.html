@@ -26,7 +26,8 @@
          <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Proficiency</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#published-projects">Projects</a></li>
+            <li><a href="#projects">Prototypes</a></li>
             
             
             <!--<li><a href="#Contact">Contact Me</a></li>-->
@@ -46,7 +47,8 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#published-projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Prototypes</a></li>
           
           <!--<li><a href="#Contact" onclick="toggleMenu()">Contact Me</a></li>-->
         </div>
@@ -240,12 +242,64 @@
        <img src="./assets/arrow.png" 
        alt="Arrow icon" 
        class="icon arrow" 
-       onclick="location.href='./#projects'"
+       onclick="location.href='./#published-projects'"
        />
+      </section>
+      <section id="published-projects">
+        <p class="section__text__p1">Published On</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container store-project-card">
+              <div class="store-project-banner">
+                <div class="store-project-header">
+                  <img
+                    class="store-project-app-icon"
+                    src="https://play-lh.googleusercontent.com/c6lTR-8Bcc1s49lkzZviKnDKEtxCFQPBl2DP_AwXTd7250wGXYqXG_uwoMbLEMqcqkipJuUi8E7LBccP4z8JaQ"
+                    alt="American Life Simulator app icon"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div class="store-project-heading">
+                    <span class="store-project-badge">
+                      <img
+                        class="store-project-badge-icon"
+                        src="https://www.gstatic.com/android/market_images/web/favicon_v3.ico"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      Google Play
+                    </span>
+                    <h2 class="experience-sub-title project-title">American Life Simulator</h2>
+                    <p class="store-project-description">
+                      Published mobile game available on Google Play Store.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="store-project-meta">
+                <span>Platform: Android</span>
+                <span>Store: Google Play</span>
+                <span>Type: Published Game</span>
+              </div>
+              <div class="btn-container store-project-actions">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://play.google.com/store/apps/details?id=com.joyloopgames.americanlifesimulator&hl=tr', '_blank')"
+                >
+                  View on Google Play
+                </button>
+              </div>
+              <p class="store-project-package">
+                Package: <code>com.joyloopgames.americanlifesimulator</code>
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="projects">
       <P class="section__text__p1">Browse My</P>
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Prototypes</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">

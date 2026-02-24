@@ -549,6 +549,108 @@ height: 316px;
 
 }
 
+#published-projects{
+   position: relative;
+   height: auto;
+   min-height: 34rem;
+}
+
+#published-projects .about-containers{
+   justify-content: center;
+}
+
+.store-project-card{
+   flex: 0 1 560px;
+   width: 100%;
+   max-width: 560px;
+   text-align: left;
+   padding: 0;
+   overflow: hidden;
+}
+
+.store-project-banner{
+   padding: 1.5rem 1.5rem 0.75rem;
+   background: linear-gradient(135deg, rgba(66,133,244,0.10), rgba(52,168,83,0.12));
+   border-bottom: 1px solid rgba(163,163,163,0.45);
+}
+
+.store-project-header{
+   display: flex;
+   align-items: flex-start;
+   gap: 1rem;
+}
+
+.store-project-app-icon{
+   width: 88px;
+   height: 88px;
+   border-radius: 20px;
+   object-fit: cover;
+   border: 1px solid rgba(163,163,163,0.45);
+   background: #fff;
+   flex-shrink: 0;
+}
+
+.store-project-heading{
+   min-width: 0;
+}
+
+.store-project-badge{
+   display: inline-flex;
+   align-items: center;
+   gap: 0.45rem;
+   font-size: 0.85rem;
+   font-weight: 700;
+   letter-spacing: 0.03em;
+   color: #1a73e8;
+   background: rgba(26,115,232,0.10);
+   border: 1px solid rgba(26,115,232,0.20);
+   border-radius: 999px;
+   padding: 0.35rem 0.75rem;
+   margin-bottom: 0.8rem;
+}
+
+.store-project-badge-icon{
+   width: 16px;
+   height: 16px;
+   display: block;
+}
+
+.store-project-description{
+   margin: 0.25rem 0 0.25rem;
+   color: rgb(85,85,85);
+   text-align: left;
+}
+
+.store-project-meta{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.6rem;
+   padding: 1rem 1.5rem 0.5rem;
+}
+
+.store-project-meta span{
+   font-size: 0.9rem;
+   border: 1px solid rgb(200,200,200);
+   border-radius: 999px;
+   padding: 0.35rem 0.75rem;
+   background: #fff;
+}
+
+.store-project-actions{
+   justify-content: center;
+   padding: 0.2rem 1.5rem 0;
+}
+
+.store-project-package{
+   margin: 0.2rem 1.5rem 1.4rem;
+   color: rgb(85,85,85);
+   font-size: 0.9rem;
+}
+
+.store-project-package code{
+   word-break: break-all;
+}
+
 
 /* Art SECTION */
 
@@ -895,6 +997,33 @@ body.dark-mode {
 .dark-mode .details-container,
 .dark-mode .details-container * {
     color: white;
+}
+
+.dark-mode .store-project-banner{
+   background: linear-gradient(135deg, rgba(66,133,244,0.16), rgba(52,168,83,0.16));
+   border-bottom-color: rgba(255,255,255,0.15);
+}
+
+.dark-mode .store-project-badge{
+   color: #8ab4f8;
+   background: rgba(138,180,248,0.12);
+   border-color: rgba(138,180,248,0.35);
+}
+
+.dark-mode .store-project-meta span{
+   background: #111;
+   border-color: #666;
+   color: white;
+}
+
+.dark-mode .store-project-description,
+.dark-mode .store-project-package{
+   color: #e6e6e6;
+}
+
+.dark-mode .store-project-app-icon{
+   border-color: rgba(255,255,255,0.18);
+   background: #111;
 }
 
 .toggle-switch {

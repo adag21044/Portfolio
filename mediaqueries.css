@@ -48,6 +48,17 @@
         margin-bottom: 1400px;
     }
 
+    #published-projects{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: fit-content;
+    }
+
+    #published-projects .experience-details-container{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
     #Art-work, .experience-details-container{
         margin-top: 2rem;
         margin-bottom: 810px;
@@ -175,5 +186,30 @@
         #contact, .contact-info-container
         {
             margin-right: 9.5px;
+        }
+
+        .store-project-actions{
+            justify-content: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .store-project-meta{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .store-project-header{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .store-project-heading{
+            width: 100%;
+        }
+
+        .store-project-description{
+            text-align: center;
         }
     }
