@@ -141,3 +141,126 @@ window.onload = function () {
     document.getElementById('dark-mode-toggle').checked = true;
   }
 };
+
+function initScrollReveal() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const revealTargets = [
+    ...document.querySelectorAll("section"),
+    ...document.querySelectorAll(".details-container"),
+    ...document.querySelectorAll(".contact-info-upper-container"),
+    ...document.querySelectorAll(".contact-info-container"),
+    ...document.querySelectorAll(".arrow")
+  ];
+
+  if (!revealTargets.length) return;
+
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    revealTargets.forEach((element) => element.classList.add("is-visible"));
+    return;
+  }
+
+  revealTargets.forEach((element, index) => {
+    if (element.classList.contains("reveal-on-scroll")) return;
+    element.classList.add("reveal-on-scroll");
+    element.style.setProperty("--reveal-delay", `${Math.min((index % 6) * 60, 240)}ms`);
+  });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      });
+    },
+    {
+      rootMargin: "0px 0px -10% 0px",
+      threshold: 0.12
+    }
+  );
+
+  revealTargets.forEach((element) => observer.observe(element));
+}
+
+function initActiveSectionLinks() {
+  const navLinks = [...document.querySelectorAll('a[href^="#"]')];
+  const sectionLinks = navLinks.filter((link) => {
+    const href = link.getAttribute("href");
+    return href && href.length > 1 && document.querySelector(href);
+  });
+
+  if (!sectionLinks.length) return;
+
+  const linkMap = new Map();
+  sectionLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!linkMap.has(href)) linkMap.set(href, []);
+    linkMap.get(href).push(link);
+  });
+
+  const sections = [...new Set(sectionLinks.map((link) => document.querySelector(link.getAttribute("href"))))];
+
+  function setActive(id) {
+    sectionLinks.forEach((link) => link.classList.remove("is-active"));
+    const matches = linkMap.get(`#${id}`) || [];
+    matches.forEach((link) => link.classList.add("is-active"));
+  }
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visible.length > 0) {
+          setActive(visible[0].target.id);
+        }
+      },
+      {
+        rootMargin: "-35% 0px -45% 0px",
+        threshold: [0.15, 0.35, 0.55]
+      }
+    );
+
+    sections.forEach((section) => section && observer.observe(section));
+  } else {
+    const onScroll = () => {
+      let current = sections[0];
+      sections.forEach((section) => {
+        if (!section) return;
+        const top = section.getBoundingClientRect().top;
+        if (top <= window.innerHeight * 0.35) current = section;
+      });
+      if (current) setActive(current.id);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+}
+
+function initCardPointerLift() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const cards = document.querySelectorAll(".details-container.color-container, .store-project-card");
+  cards.forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width;
+      const y = (event.clientY - rect.top) / rect.height;
+      const rotateY = (x - 0.5) * 4;
+      const rotateX = (0.5 - y) * 4;
+      card.style.transform = `translateY(-4px) perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
+    });
+
+    card.addEventListener("pointerleave", () => {
+      card.style.transform = "";
+    });
+  });
+}
+
+window.addEventListener("load", () => {
+  initScrollReveal();
+  initActiveSectionLinks();
+  initCardPointerLift();
+});

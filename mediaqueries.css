@@ -213,3 +213,132 @@
             text-align: center;
         }
     }
+
+/* ===============================
+   Refresh responsive overrides
+   =============================== */
+
+@media screen and (max-width: 1200px){
+    section{
+        margin: 0.75rem auto !important;
+        width: calc(100% - 1.25rem) !important;
+        padding: 1.15rem !important;
+    }
+
+    #desktop-nav,
+    #hamburger-nav{
+        width: calc(100% - 1.25rem) !important;
+    }
+
+    .toggle-switch{
+        top: 5.1rem !important;
+        right: 0.65rem !important;
+    }
+
+    .experience-details-container{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    #about,
+    #experience,
+    #published-projects,
+    #projects,
+    #projects1,
+    #projects2,
+    #contact{
+        margin-bottom: 0.85rem !important;
+        height: auto !important;
+    }
+
+    .about-containers{
+        gap: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section{
+        border-radius: 1.15rem !important;
+        padding: 1rem !important;
+    }
+
+    #desktop-nav,
+    #hamburger-nav{
+        top: 0.4rem;
+        padding: 0.55rem 0.75rem !important;
+        min-height: 3.9rem !important;
+    }
+
+    .toggle-switch{
+        top: 4.8rem !important;
+        right: 0.55rem !important;
+        transform: scale(0.92);
+        transform-origin: top right;
+    }
+
+    .logo{
+        font-size: 1rem !important;
+    }
+
+    .about-containers{
+        flex-direction: column !important;
+    }
+
+    .details-container{
+        width: 100% !important;
+        margin-bottom: 0.8rem !important;
+        padding: 0.95rem !important;
+    }
+
+    #projects .about-containers > .details-container.color-container,
+    #projects1 .about-containers > .details-container.color-container,
+    #projects2 .about-containers > .details-container.color-container{
+        max-width: none !important;
+        flex-basis: auto !important;
+    }
+
+    .article-container,
+    .article-container1{
+        gap: 0.75rem !important;
+    }
+
+    .article-container iframe,
+    .article-container1 iframe{
+        aspect-ratio: 16 / 9;
+        height: auto !important;
+    }
+
+    .btn-container{
+        gap: 0.65rem;
+    }
+
+    .btn{
+        width: 100%;
+        min-width: 0;
+    }
+
+    #social-container .icon{
+        width: 2.4rem;
+        height: 2.4rem;
+        padding: 0.45rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .title{
+        font-size: 1.8rem !important;
+    }
+
+    .section__text__p2{
+        font-size: 1.05rem !important;
+    }
+
+    .store-project-meta{
+        gap: 0.45rem !important;
+    }
+
+    .store-project-meta span{
+        font-size: 0.78rem !important;
+        padding: 0.28rem 0.55rem !important;
+    }
+}
