@@ -1923,207 +1923,220 @@ body.dark-mode .store-project-meta span {
 }
 
 /* =========================================================
-   Fantasy Modern Theme Pass
+   Cyber Grid Theme Pass
    ========================================================= */
 
 :root {
-  --fantasy-cyan: #68ddff;
-  --fantasy-gold: #ffe6b6;
-  --fantasy-indigo: #0b2149;
-  --fantasy-ink: #06142f;
-  --text: #eef5ff;
-  --muted: #c1d2ea;
-  --accent: #57d9ff;
-  --accent-2: #8ea8ff;
-  --surface-border: rgba(158, 214, 255, 0.26);
+  --cyber-bg-1: #030712;
+  --cyber-bg-2: #071126;
+  --cyber-bg-3: #0a1a37;
+  --cyber-line: rgba(86, 242, 255, 0.17);
+  --cyber-glow: rgba(73, 214, 255, 0.42);
+  --cyber-violet: #92a0ff;
+  --text: #eaf5ff;
+  --muted: #b7cae5;
+  --accent: #54e5ff;
+  --accent-2: #88a3ff;
+  --surface-border: rgba(108, 224, 255, 0.26);
 }
 
 body.dark-mode {
-  --text: #f8fbff;
-  --muted: #d0dcf0;
-  --accent: #7de5ff;
-  --accent-2: #a8bcff;
-  --surface-border: rgba(177, 224, 255, 0.24);
+  --text: #f5faff;
+  --muted: #c9d7ee;
+  --accent: #7ef0ff;
+  --accent-2: #b2c2ff;
+  --surface-border: rgba(131, 225, 255, 0.28);
 }
 
 body {
+  font-family: "Manrope", "Sora", sans-serif;
   background:
-    radial-gradient(65rem 40rem at 15% -10%, rgba(104,221,255,0.24), transparent 58%),
-    radial-gradient(56rem 36rem at 90% 5%, rgba(255,230,182,0.16), transparent 62%),
-    radial-gradient(46rem 30rem at 52% 100%, rgba(89,137,255,0.23), transparent 62%),
-    linear-gradient(160deg, #071334 0%, #0a1f48 45%, #0f2a5f 100%);
+    radial-gradient(72rem 40rem at 15% -15%, rgba(84,229,255,0.2), transparent 60%),
+    radial-gradient(62rem 38rem at 92% -8%, rgba(146,160,255,0.16), transparent 62%),
+    linear-gradient(160deg, var(--cyber-bg-1) 0%, var(--cyber-bg-2) 44%, var(--cyber-bg-3) 100%);
   background-attachment: fixed;
 }
 
 body.dark-mode {
   background:
-    radial-gradient(62rem 38rem at 10% -10%, rgba(80,210,255,0.2), transparent 60%),
-    radial-gradient(54rem 32rem at 90% 8%, rgba(150,177,255,0.16), transparent 58%),
-    linear-gradient(165deg, #040a19 0%, #08162f 42%, #0b2146 100%);
+    radial-gradient(68rem 36rem at 12% -15%, rgba(84,229,255,0.15), transparent 58%),
+    radial-gradient(58rem 34rem at 92% -8%, rgba(146,160,255,0.12), transparent 62%),
+    linear-gradient(165deg, #02050d 0%, #050d1f 42%, #08152e 100%);
 }
 
 body::before,
 body::after {
-  opacity: 0.55;
-  filter: blur(42px);
+  opacity: 0.48;
+  filter: blur(34px);
 }
 
 #desktop-nav,
 #hamburger-nav {
-  background: linear-gradient(135deg, rgba(8,25,58,0.9), rgba(13,40,90,0.78));
-  border: 1px solid rgba(177,224,255,0.3);
-  box-shadow: 0 20px 48px rgba(2,8,26,0.42), inset 0 1px 0 rgba(255,255,255,0.14);
+  background: linear-gradient(135deg, rgba(5,19,42,0.88), rgba(8,31,66,0.72));
+  border: 1px solid rgba(122,231,255,0.34);
+  box-shadow: 0 18px 44px rgba(2,10,28,0.44), inset 0 1px 0 rgba(255,255,255,0.12);
 }
 
 .logo {
-  font-family: "Cinzel", "Sora", serif;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #f4f9ff;
+  font-family: "Orbitron", "Sora", sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #e8f9ff;
 }
 
 .nav-links a,
 .menu-links a {
-  color: #e8f3ff;
+  color: #dff4ff;
+  font-weight: 600;
 }
 
 .menu-links {
-  background: linear-gradient(165deg, rgba(9,27,62,0.96), rgba(9,36,82,0.92));
+  background: linear-gradient(165deg, rgba(5,20,44,0.97), rgba(8,34,73,0.92));
+  border-color: rgba(106, 219, 255, 0.3);
 }
 
 section {
-  background: linear-gradient(160deg, rgba(7,24,57,0.82), rgba(12,39,86,0.7));
-  border: 1px solid rgba(173, 221, 255, 0.25);
-  box-shadow: 0 28px 64px rgba(2,8,24,0.4), inset 0 1px 0 rgba(255,255,255,0.08);
+  background:
+    linear-gradient(160deg, rgba(6,24,52,0.86), rgba(8,31,67,0.74)),
+    repeating-linear-gradient(0deg, transparent 0 34px, rgba(86,242,255,0.05) 34px 35px),
+    repeating-linear-gradient(90deg, transparent 0 34px, rgba(86,242,255,0.05) 34px 35px);
+  border: 1px solid rgba(106,220,255,0.24);
+  box-shadow: 0 24px 58px rgba(2,9,24,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
   overflow: hidden;
 }
 
 section::before {
-  background: linear-gradient(135deg, rgba(113,210,255,0.24), rgba(255,230,182,0.11), rgba(123,146,255,0.2));
+  background: linear-gradient(125deg, rgba(84,229,255,0.2), rgba(136,163,255,0.14), rgba(84,229,255,0.07));
 }
 
 section::after {
   content: "";
   position: absolute;
-  inset: -70% -25% auto;
-  height: 220%;
-  background: conic-gradient(from 220deg, transparent 0deg, rgba(126,228,255,0.12) 80deg, transparent 145deg, rgba(255,230,182,0.08) 215deg, transparent 300deg);
-  animation: mythicSweep 18s linear infinite;
+  inset: 0;
+  background:
+    linear-gradient(100deg, transparent 0%, rgba(84,229,255,0.08) 40%, transparent 55%),
+    repeating-linear-gradient(0deg, transparent 0 46px, rgba(84,229,255,0.04) 46px 47px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(84,229,255,0.04) 46px 47px);
+  background-size: 220% 100%, 100% 100%, 100% 100%;
+  animation: cyberSweep 15s linear infinite;
   pointer-events: none;
 }
 
 #profile .title,
 .title {
-  font-family: "Cinzel", "Sora", serif;
+  font-family: "Orbitron", "Sora", sans-serif;
+  letter-spacing: 0.02em;
 }
 
 #profile .title {
-  background: linear-gradient(120deg, #ffffff, var(--fantasy-gold) 45%, #9ae6ff);
+  background: linear-gradient(120deg, #ffffff 0%, #95f0ff 45%, #a7b8ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 12px 35px rgba(89,196,255,0.22);
+  text-shadow: 0 10px 30px rgba(84,229,255,0.18);
 }
 
 #profile .section__text::before {
-  border-color: rgba(255,230,182,0.38);
-  background: linear-gradient(135deg, rgba(255,230,182,0.2), rgba(87,217,255,0.16));
-  color: #fff2cf;
+  border-color: rgba(126,240,255,0.38);
+  background: linear-gradient(135deg, rgba(84,229,255,0.14), rgba(146,160,255,0.12));
+  color: #dcf8ff;
 }
 
 .section__text__p2 {
-  letter-spacing: 0.12em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #d9e8ff;
+  color: #d3e7ff;
 }
 
 .btn {
-  border: 1px solid rgba(173,221,255,0.35);
-  box-shadow: 0 12px 26px rgba(3,12,30,0.26), inset 0 1px 0 rgba(255,255,255,0.16);
+  border: 1px solid rgba(117,232,255,0.35);
+  box-shadow: 0 10px 24px rgba(3,12,30,0.28), inset 0 1px 0 rgba(255,255,255,0.12);
 }
 
 .btn-color-1 {
-  color: #0a1f47;
-  background: linear-gradient(135deg, #ffdca0, #6ae1ff 55%, #b5c3ff);
+  color: #00162e;
+  background: linear-gradient(135deg, #7ff0ff 0%, #7db9ff 60%, #b4baff 100%);
 }
 
 .btn-color-1:hover {
-  background: linear-gradient(135deg, #ffe8be, #8ce9ff 55%, #c6d2ff);
+  background: linear-gradient(135deg, #9df4ff 0%, #9ac9ff 58%, #c7cfff 100%);
 }
 
 .btn-color-2 {
-  background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.05));
-  border-color: rgba(166,217,255,0.32);
-  color: #e8f5ff;
+  color: #e4f6ff;
+  border-color: rgba(118,232,255,0.34);
+  background: linear-gradient(135deg, rgba(255,255,255,0.13), rgba(255,255,255,0.04));
 }
 
 .btn-color-2:hover {
-  background: linear-gradient(135deg, rgba(255,255,255,0.22), rgba(255,255,255,0.1));
   color: #ffffff;
-  border-color: rgba(202,235,255,0.56);
+  border-color: rgba(166,241,255,0.6);
+  background: linear-gradient(135deg, rgba(255,255,255,0.24), rgba(255,255,255,0.08));
 }
 
 .details-container,
 .store-project-card,
 .contact-info-upper-container {
-  background: linear-gradient(165deg, rgba(8,29,68,0.85), rgba(8,33,76,0.74));
-  border: 1px solid rgba(166,219,255,0.28);
-  box-shadow: 0 16px 38px rgba(3,10,28,0.34), inset 0 1px 0 rgba(255,255,255,0.09);
+  background:
+    linear-gradient(165deg, rgba(5,24,56,0.86), rgba(8,31,70,0.78)),
+    repeating-linear-gradient(90deg, transparent 0 26px, rgba(84,229,255,0.03) 26px 27px);
+  border: 1px solid rgba(109,223,255,0.26);
+  box-shadow: 0 14px 34px rgba(2,10,26,0.38), inset 0 1px 0 rgba(255,255,255,0.09);
 }
 
 .details-container:hover,
 .store-project-card:hover,
 .contact-info-upper-container:hover {
-  transform: translateY(-7px) scale(1.01);
-  border-color: rgba(208,239,255,0.56);
-  box-shadow: 0 24px 52px rgba(2,8,24,0.45), 0 0 0 1px rgba(255,230,182,0.18);
+  transform: translateY(-6px) scale(1.008);
+  border-color: rgba(160,241,255,0.56);
+  box-shadow: 0 22px 50px rgba(2,9,24,0.5), 0 0 0 1px rgba(136,163,255,0.22);
 }
 
 #projects .projects-grid > .project-card {
-  background: linear-gradient(165deg, rgba(10,33,77,0.88), rgba(8,28,66,0.78));
+  background:
+    linear-gradient(165deg, rgba(5,24,56,0.9), rgba(9,33,74,0.82)),
+    repeating-linear-gradient(0deg, transparent 0 22px, rgba(84,229,255,0.03) 22px 23px);
 }
 
 #projects .project-title,
 #projects .project-title1,
 .experience-sub-title {
-  color: #f6fbff;
+  color: #f1fbff;
 }
 
+p,
 .snake-content,
 .store-project-description,
-.store-project-package,
-p {
+.store-project-package {
   color: var(--muted);
 }
 
 #social-container .icon {
-  border-color: rgba(189,229,255,0.44);
-  background: radial-gradient(circle at 30% 22%, rgba(255,255,255,0.38), rgba(255,255,255,0.07));
-  box-shadow: 0 12px 26px rgba(3,11,30,0.35);
+  border-color: rgba(135,236,255,0.42);
+  background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), rgba(255,255,255,0.06));
+  box-shadow: 0 10px 22px rgba(3,11,30,0.36), 0 0 16px rgba(84,229,255,0.15);
 }
 
 #social-container .icon:hover {
-  box-shadow: 0 18px 34px rgba(50,169,255,0.34), 0 0 0 1px rgba(255,230,182,0.24);
+  box-shadow: 0 18px 34px rgba(43,188,255,0.36), 0 0 0 1px rgba(125,240,255,0.36);
 }
 
 body.dark-mode #social-container .icon {
   filter: brightness(0) invert(1);
 }
 
-@keyframes mythicSweep {
-  0% { transform: rotate(0deg); opacity: 0.35; }
-  50% { opacity: 0.56; }
-  100% { transform: rotate(360deg); opacity: 0.35; }
+@keyframes cyberSweep {
+  0% { background-position: 220% 0, 0 0, 0 0; }
+  100% { background-position: -120% 0, 0 0, 0 0; }
 }
 
 @media screen and (max-width: 992px) {
   .logo {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
   }
 
   .title {
-    font-size: clamp(1.85rem, 5vw, 2.5rem) !important;
+    font-size: clamp(1.75rem, 5vw, 2.4rem) !important;
   }
 }
 
@@ -2133,7 +2146,7 @@ body.dark-mode #social-container .icon {
   }
 
   section::after {
-    opacity: 0.45;
+    opacity: 0.4;
   }
 }
 
