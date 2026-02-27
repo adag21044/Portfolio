@@ -2155,3 +2155,18 @@ body.dark-mode #social-container .icon {
     animation: none !important;
   }
 }
+
+/* Contact area cleanup: prevent empty dark footer block */
+footer {
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+body.dark-mode footer {
+  background: transparent !important;
+  border-color: transparent !important;
+}
