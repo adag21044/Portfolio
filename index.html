@@ -18,8 +18,8 @@
   <label class="toggle-switch">
     <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
     <span class="slider">
-      <span class="sun-icon">☀️</span>
-      <span class="moon-icon">🌙</span>
+      <span class="sun-icon">&#9728;&#65039;</span>
+      <span class="moon-icon">&#127769;</span>
     </span>
   </label>
   
@@ -64,11 +64,11 @@
          
          <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Ahmet E. Dağ</h1>
+          <h1 class="title">Ahmet E. Da&#287;</h1>
           <p class="section__text__p2">Game Developer</p>
           <div class="btn-container">
             <button class="btn btn-color-2"
-   onclick="window.open('https://docs.google.com/document/d/1sK8WLErLunHc7q5QHV9TeaCp-MPmtnWb/edit?usp=sharing&ouid=117092449446562078841&rtpof=true&sd=true')">
+   onclick="window.open('https://docs.google.com/document/d/1sK8WLErLunHc7q5QHV9TeaCp-MPmtnWb/edit?usp=sharing&ouid=117092449446562078841&rtpof=true&sd=true', '_blank', 'noopener,noreferrer')">
    Download Resume
 </button>
             <button
@@ -79,9 +79,9 @@
           </div>
 
           <div id="social-container">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/linkedin.svg" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/adag21044/'" />
-            <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="icon" onclick="location.href='https://github.com/adag21044'" />
-            <img src="https://cdn.simpleicons.org/medium/12100E" alt="Medium" class="icon" onclick="location.href='https://medium.com/@adag21044'" />
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/adag21044/', '_blank', 'noopener,noreferrer')" />
+            <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" class="icon" onclick="window.open('https://github.com/adag21044', '_blank', 'noopener,noreferrer')" />
+            <img src="https://cdn.simpleicons.org/medium/12100E" alt="Medium" class="icon" onclick="window.open('https://medium.com/@adag21044', '_blank', 'noopener,noreferrer')" />
           </div>
           
 
@@ -246,7 +246,7 @@
        <img src="./assets/arrow.png" 
        alt="Arrow icon" 
        class="icon arrow" 
-       onclick="location.href='./#published-projects'"
+        onclick="location.href='./#published-projects'"
        />
       </section>
       <section id="published-projects">
@@ -289,7 +289,7 @@
               <div class="btn-container store-project-actions">
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="window.open('https://play.google.com/store/apps/details?id=com.joyloopgames.americanlifesimulator&hl=tr', '_blank')"
+                  onclick="window.open('https://play.google.com/store/apps/details?id=com.joyloopgames.americanlifesimulator&hl=tr', '_blank', 'noopener,noreferrer')"
                 >
                   View on Google Play
                 </button>
@@ -299,273 +299,247 @@
         </div>
       </section>
       <section id="projects">
-      <P class="section__text__p1">Browse My</P>
-      <h1 class="title">Prototypes</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://www.youtube.com/embed/bszFYCdY4bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h2 class="experience-sub-title project-title"> Hyper Casual Arcade Idle System</h2>
-            <div class="text-container"> 
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Hyper-Casual-Arcade-Idle-System'">
-                  Github
-                </button>
-                
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Prototypes</h1>
+        <div class="experience-details-container">
+          <div class="about-containers projects-grid">
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/bszFYCdY4bQ" title="Hyper Casual Arcade Idle System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
-              <br>
-              <ul class="snake-content">
-                <li>Player movement: The player moves towards the mouse click position and smoothly faces the direction of movement.</li>
-                <li>Paper Collection: The player collects papers from tables and stacks them with a smooth animation.</li>
-                <li>Paper Placement: Papers can be placed on work desks, where they are processed to generate money.</li>
-                <li>Work Desk Processing: The work desk processes papers and animates while generating money.</li>
-                <li>Printer Functionality: A printer continuously prints papers that the player can collect.</li>
+              <h2 class="experience-sub-title project-title">Hyper Casual Arcade Idle System</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/adag21044/Hyper-Casual-Arcade-Idle-System', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
                 <br>
-                <strong>Role:</strong> Programmer (Individual Project)
-                <br>
-                <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-            </ul>
-          </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-           <iframe width="350" height="315" src="https://youtube.com/embed/tgFHDhDP7Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h2 class="experience-sub-title project-title">Top Down Shooter Rogue-Like Game System</h2>
-            <div class="text-container">
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Unity-Top-Down-Shooter-Roguelike'">
-                  Github
-                </button>
-                
+                <ul class="snake-content">
+                  <li>Player movement: The player moves towards the mouse click position and smoothly faces the direction of movement.</li>
+                  <li>Paper Collection: The player collects papers from tables and stacks them with a smooth animation.</li>
+                  <li>Paper Placement: Papers can be placed on work desks, where they are processed to generate money.</li>
+                  <li>Work Desk Processing: The work desk processes papers and animates while generating money.</li>
+                  <li>Printer Functionality: A printer continuously prints papers that the player can collect.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+                </ul>
               </div>
-              <br>
-            <ul class="snake-content">
-              <li>CameraFollow: Adjusts the camera position to follow the player, maintaining a set distance</li> 
-              <li>CollectibleSpawner: Spawns a collectible item when the object is destroyed.</li>
-              <li>EnemyMove: Moves the enemy towards the player, facing them as they move.</li>
-              <li>MuzzleController: Controls projectile movement, destroying itself and any hit enemies on contact.</li>
-              <li>Notifier: Manages notifications by sending events to registered observers.</li>
-              <li>ObjectPool: Pools objects to improve performance, reusing inactive ones instead of creating new instances.</li>
-              <br>
-              <strong>Role:</strong> Programmer (Individual Project)
-                <br>
-                <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-        </ul>
-         </div>
-      </div>
-       <div class="details-container color-container">
-          <div class="article-container">
-            <iframe width="350" height="315" src="https://youtube.com/embed/jn5XaUXKumY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <h2 class="experience-sub-title project-title">Cube Surfers </h2>
-          <div class="text-container"> 
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Unity-Cube-Surfers'">
-              Github
-            </button>
-            
-          </div>
-          <br>
-          <ul class="snake-content">
-            <li>CameraFollow: Smoothly follows the hero with a set offset using linear interpolation.</li>
-            <li>CubeController: Uses raycasting to detect obstacles, adding/removing cubes from the hero's stack as needed.</li>
-            <li>HeroInputController: Reads horizontal input from the mouse to control hero movement.</li>
-            <li>HeroMovementController: Moves the hero forward and adjusts horizontal position based on player input within set boundaries.</li>
-            <li>HeroStackController: Manages the hero’s cube stack, adding/removing cubes and updating positions.</li>
-            <br>
-            <strong>Role:</strong> Programmer (Individual Project)
-            <br>
-            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-        </ul>
-        </div>
-      </div>
-    </div>
-      </div>
-      
-      <!--<img src="./assets/arrow.png" 
-      alt="Arrow icon" 
-      class="icon arrow" 
-      onclick="location.href='./#projects'"
-      />-->
-    </section>
-    <section id="projects1">
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://www.youtube.com/embed/iYBXeHw7XIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <h2 class="experience-sub-title project-title">Maze Tilt Master</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Maze-Tilt-Master'">
-                Github
-              </button>
-            </div>
-            <div class="text-container">
-            </br> 
-            <ul class="snake-content">
-              <li>Engage in a labyrinth puzzle where you guide the ball to the goal using device tilt controls.</li>
-              <li>Physics-based gameplay with realistic motion for an immersive experience.</li>
-              <li>Multiple challenging levels, increasing in difficulty with unique layouts.</li>
-              <li>Background music plays in a loop for a relaxing gaming atmosphere.</li>
-              <br>
-              <strong>Role:</strong> Programmer (Individual Project)
-              <br>
-              <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-          </ul>
-          </div>
-          </div>
-          <div class="details-container color-container">
-  <div class="article-container">
-    <iframe width="350" height="315" src="https://www.youtube.com/embed/3n5rgD3jguM" title="Block Puzzle Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <h2 class="experience-sub-title project-title">Block Puzzle</h2>
-  <div class="btn-container">
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/adag21044/Block-Puzzle'">
-      Github
-    </button>
-  </div>
-  <div class="text-container">
-    <br>
-    <ul class="snake-content">
-      <li>A casual block puzzle game where each level features a different grid layout and time constraint.</li>
-      <li>The player's goal is to fill the grid by placing the provided blocks before the timer runs out.</li>
-      <li>Each level introduces a new challenge with unique grid shapes and increasing difficulty.</li>
-      <li>Designed for quick play sessions and improving spatial reasoning skills.</li>
-      <br>
-      <strong>Role:</strong> Programmer (Individual Project)
-      <br>
-      <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-    </ul>
-  </div>
-</div>
-      <div class="details-container color-container">
-          <div class="article-container1">
-            <iframe width="350" height="315" src="https://www.youtube.com/embed/Kh5I2KXPfJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <h2 class="experience-sub-title project-title1">Fish Dive</h2>
-          <div class="text-container"> 
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn1" onclick="location.href='https://github.com/adag21044/Fish-Dive'">
-                Github
-              </button>   
-            </div>
-          <ul class="snake-content">
-            <li>🎮 Player controls a fish by dragging it across the screen to touch bubbles containing the announced number.</li>
-            <li>⏱️ A countdown starts the game: “3, 2, 1, GO!” Scene scrolls upward while bubbles rise from the bottom.</li>
-            <li>🔊 Every few seconds, a number between 1 and 10 is announced via audio.</li>
-            <br>
-            <strong>Role:</strong> Programmer (Individual Project)
-            <br>
-            <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
-           
-        </ul>
-         </div>
-      </div>
-      
-       
 
-    </div>
-      </div>
-      
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://youtube.com/embed/tgFHDhDP7Ng" title="Top Down Shooter Rogue-Like Game System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Top Down Shooter Rogue-Like Game System</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/adag21044/Unity-Top-Down-Shooter-Roguelike', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
+                <br>
+                <ul class="snake-content">
+                  <li>CameraFollow: Adjusts the camera position to follow the player, maintaining a set distance.</li>
+                  <li>CollectibleSpawner: Spawns a collectible item when the object is destroyed.</li>
+                  <li>EnemyMove: Moves the enemy towards the player, facing them as they move.</li>
+                  <li>MuzzleController: Controls projectile movement, destroying itself and any hit enemies on contact.</li>
+                  <li>Notifier: Manages notifications by sending events to registered observers.</li>
+                  <li>ObjectPool: Pools objects to improve performance, reusing inactive ones instead of creating new instances.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://youtube.com/embed/jn5XaUXKumY" title="Cube Surfers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Cube Surfers</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/adag21044/Unity-Cube-Surfers', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
+                <br>
+                <ul class="snake-content">
+                  <li>CameraFollow: Smoothly follows the hero with a set offset using linear interpolation.</li>
+                  <li>CubeController: Uses raycasting to detect obstacles, adding/removing cubes from the hero's stack as needed.</li>
+                  <li>HeroInputController: Reads horizontal input from the mouse to control hero movement.</li>
+                  <li>HeroMovementController: Moves the hero forward and adjusts horizontal position based on player input within set boundaries.</li>
+                  <li>HeroStackController: Manages the hero's cube stack, adding/removing cubes and updating positions.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/iYBXeHw7XIA" title="Maze Tilt Master" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Maze Tilt Master</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/adag21044/Maze-Tilt-Master', '_blank', 'noopener,noreferrer')">
+                  Github
+                </button>
+              </div>
+              <div class="text-container">
+                <br>
+                <ul class="snake-content">
+                  <li>Engage in a labyrinth puzzle where you guide the ball to the goal using device tilt controls.</li>
+                  <li>Physics-based gameplay with realistic motion for an immersive experience.</li>
+                  <li>Multiple challenging levels, increasing in difficulty with unique layouts.</li>
+                  <li>Background music plays in a loop for a relaxing gaming atmosphere.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/3n5rgD3jguM" title="Block Puzzle Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Block Puzzle</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/adag21044/Block-Puzzle', '_blank', 'noopener,noreferrer')">
+                  Github
+                </button>
+              </div>
+              <div class="text-container">
+                <br>
+                <ul class="snake-content">
+                  <li>A casual block puzzle game where each level features a different grid layout and time constraint.</li>
+                  <li>The player's goal is to fill the grid by placing the provided blocks before the timer runs out.</li>
+                  <li>Each level introduces a new challenge with unique grid shapes and increasing difficulty.</li>
+                  <li>Designed for quick play sessions and improving spatial reasoning skills.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/Kh5I2KXPfJQ" title="Fish Dive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Fish Dive</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/adag21044/Fish-Dive', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
+                <ul class="snake-content">
+                  <li>Player controls a fish by dragging it across the screen to touch bubbles containing the announced number.</li>
+                  <li>A countdown starts the game: 3, 2, 1, GO. Scene scrolls upward while bubbles rise from the bottom.</li>
+                  <li>Every few seconds, a number between 1 and 10 is announced via audio.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, SOLID Principles, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://youtube.com/embed/g1kpv84s1gA?si=fiEQVa98dlDL2_B1" title="Idle Arcade Core V2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">Idle Arcade Core V2</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/your-username/your-project', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
+                <ul class="snake-content">
+                  <li>Implemented an Object Pool system to reduce runtime instantiation and improve performance.</li>
+                  <li>Developed an asynchronous AI system using UniTask for non-blocking gameplay logic.</li>
+                  <li>Used the Blackboard Pattern to enable structured data sharing between AI agents and the player.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, C#, Object Pooling, AI
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/your-video-id-2" title="New Project 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">New Project 2</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/your-username/your-project-2', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
+                <ul class="snake-content">
+                  <li>Feature 1: Add your first project feature description here.</li>
+                  <li>Feature 2: Add your second project feature description here.</li>
+                  <li>Feature 3: Add your third project feature description here.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, C#, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+
+            <div class="details-container color-container project-card">
+              <div class="article-container">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/your-video-id-3" title="New Project 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h2 class="experience-sub-title project-title">New Project 3</h2>
+              <div class="text-container">
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/your-username/your-project-3', '_blank', 'noopener,noreferrer')">
+                    Github
+                  </button>
+                </div>
+                <ul class="snake-content">
+                  <li>Feature 1: Add your first project feature description here.</li>
+                  <li>Feature 2: Add your second project feature description here.</li>
+                  <li>Feature 3: Add your third project feature description here.</li>
+                  <br>
+                  <strong>Role:</strong> Programmer (Individual Project)
+                  <br>
+                  <strong>Tools:</strong> Unity, C#, Game Design Patterns
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    <section id="projects2">
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://youtube.com/embed/g1kpv84s1gA?si=fiEQVa98dlDL2_B1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h2 class="experience-sub-title project-title">Idle Arcade Core V2</h2>
-            <div class="text-container"> 
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-username/your-project'">
-                  Github
-                </button>   
-              </div>
-            <ul class="snake-content">
-              <li>Implemented an Object Pool system to reduce runtime instantiation and improve performance.</li>
-              <li>Developed an asynchronous AI system using UniTask for non-blocking gameplay logic.</li>
-              <li>Used the Blackboard Pattern to enable structured data sharing between AI agents and the player.</li>
 
-              <br>
-              <strong>Role:</strong> Programmer (Individual Project)
-              <br>
-              <strong>Tools:</strong> Unity, C#, Object Pooling, AI
-          </ul>
-           </div>
-        </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://www.youtube.com/embed/your-video-id-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h2 class="experience-sub-title project-title">New Project 2</h2>
-            <div class="text-container"> 
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-username/your-project-2'">
-                  Github
-                </button>   
-              </div>
-            <ul class="snake-content">
-              <li>Feature 1: Add your first project feature description here.</li>
-              <li>Feature 2: Add your second project feature description here.</li>
-              <li>Feature 3: Add your third project feature description here.</li>
-              <br>
-              <strong>Role:</strong> Programmer (Individual Project)
-              <br>
-              <strong>Tools:</strong> Unity, C#, Game Design Patterns
-          </ul>
-           </div>
-        </div>
-        <div class="details-container color-container">
-            <div class="article-container">
-              <iframe width="350" height="315" src="https://www.youtube.com/embed/your-video-id-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <h2 class="experience-sub-title project-title">New Project 3</h2>
-            <div class="text-container"> 
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-username/your-project-3'">
-                  Github
-                </button>   
-              </div>
-            <ul class="snake-content">
-              <li>Feature 1: Add your first project feature description here.</li>
-              <li>Feature 2: Add your second project feature description here.</li>
-              <li>Feature 3: Add your third project feature description here.</li>
-              <br>
-              <strong>Role:</strong> Programmer (Individual Project)
-              <br>
-              <strong>Tools:</strong> Unity, C#, Game Design Patterns
-          </ul>
-           </div>
-        </div>
-
-      </div>
-        </div>
-        
-        </section>
-    
-        
-          </div>
-          
-           
-        </section>
-        <section id="contact">
+      <section id="contact">
              <p class="section__text__p1">Get in Touch</p>
              <h1 class="title">Contact Me</h1>
              <div class="contact-info-upper-container">
               <div class="contact-info-container">
                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
-               <p><a href="mailto:krethick@gmail.com">ahmetedag9@gmail.com</a></p>
+               <p><a href="mailto:krethick@gmail.com" target="_blank" rel="noopener noreferrer">ahmetedag9@gmail.com</a></p>
                
              </div>
              
               <div class="contact-info-container">
-               <img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/linkedin.svg" alt="Linkedln icon" class="icon contact-icon"/>
-               <p><a href="https://www.linkedin.com/in/adag21044/">Linkedln</a></p>
+               <img src="./assets/linkedin.png" alt="Linkedln icon" class="icon contact-icon"/>
+               <p><a href="https://www.linkedin.com/in/adag21044/" target="_blank" rel="noopener noreferrer">Linkedln</a></p>
 
              </div>
              </div>

@@ -42,12 +42,6 @@
         margin-bottom: 1670px;
     }
 
-    #projects1,
-    .experience-details-container{
-        margin-top: 1rem;
-        margin-bottom: 1400px;
-    }
-
     #published-projects{
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -244,8 +238,6 @@
     #experience,
     #published-projects,
     #projects,
-    #projects1,
-    #projects2,
     #contact{
         margin-bottom: 0.85rem !important;
         height: auto !important;
@@ -290,9 +282,7 @@
         padding: 0.95rem !important;
     }
 
-    #projects .about-containers > .details-container.color-container,
-    #projects1 .about-containers > .details-container.color-container,
-    #projects2 .about-containers > .details-container.color-container{
+    #projects .about-containers > .details-container.color-container{
         max-width: none !important;
         flex-basis: auto !important;
     }

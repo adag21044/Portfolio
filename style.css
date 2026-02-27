@@ -485,18 +485,7 @@ article .icon {
 
 #projects{
    position: relative;
-   height: 1250px;
-}
-
-#projects1{
-   position: relative;
-   height: 960px;
-}
-
-#projects2{
-   position: relative;
-   height: 960px;
-   width: 300px;
+   height: auto;
 }
 
 .color-container{
@@ -947,8 +936,8 @@ height: 316px;
 
 
 html, body {
-   overflow-x: hidden; /* Yatay kaydırmayı tamamen kapatır */
-   max-width: 100vw; /* İçeriğin ekran boyutunda kalmasını sağlar */
+   overflow-x: hidden; /* Disable horizontal scrolling */
+   max-width: 100vw; /* Keep content within viewport width */
    margin: 0;
    padding: 0;
 }
@@ -1140,7 +1129,7 @@ body.dark-mode {
 }
 
 
-/* Mobil görünümde kartları alt alta diz ve ekran genişliğine sığdır */
+/* Mobile layout: stack cards vertically and fit screen width */
 @media screen and (max-width: 768px) {
     .experience-details-container {
         flex-direction: column;
@@ -1153,23 +1142,23 @@ body.dark-mode {
     }
 
     .details-container {
-        width: 90%; /* Ekranın %90’ını kaplasın, gerektiğinde %100 yapabilirsiniz */
-        margin-bottom: 1.5rem; /* Kartlar arasında biraz boşluk bırak */
-        padding: 1rem; /* İçeriklerin daha iyi görünmesi için padding ekleyin */
+        width: 90%; /* Use 90% width on small screens */
+        margin-bottom: 1.5rem; /* Add spacing between cards */
+        padding: 1rem; /* Add inner spacing for readability */
     }
 
     iframe {
-        width: 100%; /* Videoların da tam genişlikte görünmesini sağlar */
+        width: 100%; /* Let videos use full card width */
         height: auto;
     }
 
     section {
-      padding: 1rem; /* Section padding’ini azaltarak içerikleri sıkıştırabilirsiniz */
+      padding: 1rem; /* Reduce section padding on mobile */
   }
 
   .text-container, .snake-content {
-      margin-left: 0; /* Sol boşlukları mobilde sıfırlayın */
-      padding: 0.5rem; /* İç boşlukları optimize edin */
+      margin-left: 0; /* Reset left spacing on mobile */
+      padding: 0.5rem; /* Optimize inner spacing */
   }
 }
 
@@ -1432,7 +1421,7 @@ section::before {
 }
 
 #profile .section__text::before {
-   content: "Game Developer � Mobile � Unity";
+   content: "Game Developer \2022 Mobile \2022 Unity";
    display: inline-block;
    margin-bottom: 0.9rem;
    padding: 0.35rem 0.75rem;
@@ -1497,6 +1486,7 @@ section::before {
 body.dark-mode #social-container .icon {
    background: rgba(15,23,42,0.8);
    border-color: rgba(255,255,255,0.08);
+   filter: brightness(0) invert(1);
 }
 
 .btn {
@@ -1688,8 +1678,6 @@ body.dark-mode .color-container {
 #published-projects,
 #experience,
 #projects,
-#projects1,
-#projects2,
 #Art-work,
 #Art-work1,
 #Art-work2,
@@ -1699,9 +1687,7 @@ body.dark-mode .color-container {
    height: auto !important;
 }
 
-#projects2 {
-   width: auto !important;
-}
+
 
 .store-project-card {
    border-radius: 1.35rem;
@@ -1856,26 +1842,82 @@ body.dark-mode .store-project-meta span {
   width: 100%;
 }
 
-/* Prototype cards width consistency fix */
-#projects .about-containers,
-#projects1 .about-containers,
-#projects2 .about-containers {
-  justify-content: center;
+/* Prototypes section: clean 3x3 grid */
+#projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.85rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 1.1rem;
+  box-sizing: border-box;
   align-items: stretch;
 }
 
-#projects .about-containers > .details-container.color-container,
-#projects1 .about-containers > .details-container.color-container,
-#projects2 .about-containers > .details-container.color-container {
-  flex: 0 1 360px;
+#projects .projects-grid > .project-card {
   width: 100%;
-  max-width: 360px;
+  max-width: none;
+  margin: 0;
+  padding: 1.1rem;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-#projects .article-container,
-#projects1 .article-container,
-#projects2 .article-container,
-#projects1 .article-container1,
-#projects2 .article-container1 {
+#projects .projects-grid .article-container {
   width: 100%;
+}
+
+#projects .projects-grid .text-container {
+  flex: 1;
+}
+
+#projects .projects-grid iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+#projects .project-title,
+#projects .project-title1 {
+  font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+  margin: 0.7rem 0.35rem;
+}
+
+#projects .snake-content {
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin-left: 0.4rem;
+  padding-right: 0.2rem;
+}
+
+#projects .snake-content li {
+  margin-bottom: 0.35rem;
+}
+
+#projects .project-card:hover iframe {
+  transform: none;
+}
+
+@media screen and (max-width: 1400px) {
+  #projects .projects-grid {
+    gap: 1.4rem;
+    padding-inline: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #projects .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    padding-inline: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects .projects-grid {
+    grid-template-columns: 1fr;
+    padding-inline: 0.35rem;
+  }
 }
